@@ -16,9 +16,21 @@
     --dbs--red-primary: #ff5470;
     --dbs--yellow-primary: #fde24f;
 
+    /*Footer colors*/
+    --dbs--footer-background: #001534;
+    --dbs--footer-headline: #fffffe;
+    --dbs--footer-papragraph: #b7c9e4;
+    --dbs--footer-link: #fde24f;
+    --dbs--footer-card-background: #fffffe;
+    --dbs--footer-card-headline: #001534;
+    --dbs--footer-card-paragraph: #1b2d45;
+
+
     /*Screen sizes*/
     --dbs--screen-sm: 768px;
     --dbs--screen-md: 992px;
+
+
 }
 
 /*Global*/
@@ -38,8 +50,8 @@ body{
 
 /*Header*/
 .header {
+    min-height: 10vh;
     width: 100%;
-    height: 100vh;
     background: var(--dbs--background-secondary);
 }
 
@@ -187,4 +199,102 @@ body{
 ::-webkit-scrollbar-thumb{
     background: var(--dbs--stroke);
     border-radius: 10px;
+}
+
+/*Footer*/
+.footer{
+    width: 100%;
+    background: var(--dbs--footer-background);
+}
+
+.footer__main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__tag, .footer__links, .footer__contacts, .footer__socials, .footer__newsletter{
+    margin: 10px 0;
+}
+
+.footer__tag-logo{
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.footer__tag-description{
+    width: 250px;
+    line-height: 22px;
+    font-size: 14px;
+    text-align: left;
+    color: var(--dbs--footer-papragraph);
+}
+
+.tag-description__bs-name {
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: underline;
+    color: var(--dbs--footer-link);
+}
+
+.footer__links-title, .footer__contacts-title, .footer__socials-title, .footer__newsletter-title{
+    font-size: 25px;
+    margin: 25px 0;
+    color: var(--dbs--background-main);
+}
+
+.footer__links-item, .footer__contacts-item{
+    display: block;
+    color: var(--dbs--background-main);
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.footer__contacts-item i, .footer__socials-links i{
+    margin-right: 10px;
+}
+
+.footer__socials-links i{
+    margin: 0 5px;
+    color: var(--dbs--background-main);
+}
+
+.footer__newsletter-bar{
+    width: 230px;
+    height: 30px;
+    background: rgba(202,202,202);
+    border-radius: 25px;
+}
+
+.footer__newsletter-bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+}
+
+.footer__newsletter-bar button{
+    padding: 7px 15px;
+    background: #089da1;
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer__end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    font-weight: 200;
+    font-size: 14px;
+    color: var(--dbs--background-main);
 }
