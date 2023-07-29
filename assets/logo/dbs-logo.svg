@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#00214D;}
+	.st2{font-family:'Montserrat-Bold';}
+	.st3{font-size:51.4866px;}
+	.st4{letter-spacing:3;}
+	.st5{fill:#FF5470;}
+	.st6{font-family:'Montserrat-Light';}
+	.st7{font-size:36px;}
+	.st8{letter-spacing:1;}
+	.st9{display:none;}
+	.st10{display:inline;}
+</style>
+<g id="BACKGOUND">
+	<rect x="0.04" y="0.15" class="st0" width="500" height="500"/>
+</g>
+<g id="OBJECTS">
+	<g>
+		<g>
+			<text transform="matrix(1 0 0 1 224.6352 248.424)"><tspan x="0" y="0" class="st1 st2 st3 st4">dom</tspan><tspan x="134.95" y="0" class="st5 st2 st3 st4">i</tspan><tspan x="154.3" y="0" class="st1 st2 st3 st4">no</tspan></text>
+			<text transform="matrix(1 0 0 1 243.2621 286.0147)" class="st1 st6 st7 st8">bookstore</text>
+		</g>
+		<g>
+			<path class="st1" d="M73.23,290.83h21.61v-80.62H73.23V290.83z M76.47,213.44h15.14v74.15H76.47V213.44z"/>
+			<path class="st1" d="M188.03,210.21v80.62h21.61v-80.62H188.03z M206.4,287.59h-15.14v-74.15h15.14V287.59z"/>
+			<rect x="43.93" y="210.21" class="st1" width="21.61" height="80.62"/>
+			
+				<rect x="84.05" y="239.24" transform="matrix(0.4162 -0.9093 0.9093 0.4162 -154.6117 259.2026)" class="st1" width="80.98" height="21.51"/>
+			
+				<rect x="113.21" y="239.99" transform="matrix(0.5 -0.866 0.866 0.5 -140.2986 258.4825)" class="st5" width="80.98" height="21.51"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_3" class="st9">
+	<g class="st10">
+		<g>
+			<path class="st1" d="M109.79,356.89h56.58V145.82h-56.58V356.89z M118.27,154.3h39.64v194.12h-39.64V154.3z"/>
+			<path class="st1" d="M410.33,145.82v211.06h56.58V145.82H410.33z M458.44,348.41H418.8V154.3h39.64V348.41z"/>
+			<rect x="33.09" y="145.82" class="st1" width="56.58" height="211.06"/>
+			
+				<rect x="138.11" y="221.84" transform="matrix(0.4162 -0.9093 0.9093 0.4162 -84.7964 367.935)" class="st1" width="212.01" height="56.32"/>
+			
+				<rect x="214.46" y="223.79" transform="matrix(0.5 -0.866 0.866 0.5 -57.9567 403.508)" class="st5" width="212.01" height="56.32"/>
+		</g>
+	</g>
+</g>
+</svg>

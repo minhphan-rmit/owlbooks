@@ -1,0 +1,190 @@
+/*Font import*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Variables*/
+:root {
+    /*Colors*/
+    --dbs--background-main: #fffffe;
+    --dbs--background-secondary: #f2f4f6;
+    --dbs--headline: #00214d;
+    --dbs--papragraph: #1b2d45;
+    --dbs--sub-headline: #1b2d45;
+    --dbs--button: #00ebc7;
+    --dbs--button-text: #00214d;
+    --dbs--stroke: #00214d;
+    --dbs--highlight: #00ebc7;
+    --dbs--red-primary: #ff5470;
+    --dbs--yellow-primary: #fde24f;
+
+    /*Screen sizes*/
+    --dbs--screen-sm: 768px;
+    --dbs--screen-md: 992px;
+}
+
+/*Global*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+body{
+    min-height: 100vh;
+    background: var(--dbs--background-main);
+}
+
+/*Header*/
+.header {
+    width: 100%;
+    height: 100vh;
+    background: var(--dbs--background-secondary);
+}
+
+.header .header__nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px var(--dbs--stroke);
+    background: var(--dbs--background-secondary);
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    padding: 20px 50px;
+}
+
+.header .header__nav .nav__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header .header__nav .nav__logo img{
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.header .header__nav .nav__list{
+    list-style: none;
+}
+
+.header .header__nav .nav__list-item{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.header .header__nav .nav__list-item .nav__item-link{
+    text-decoration: none;
+    color: var(--dbs--headline);
+}
+
+.header .header__nav .nav__list-item .nav__item-link:hover{
+    color: var(--dbs--red-primary);
+}
+
+/*Featured books*/
+.featured-books {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    background: var(--dbs--background-secondary);
+}
+
+.featured-books__headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-weight: 800;
+    color: var(--dbs--headline);
+}
+
+.featured-books__box {
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.book-card {
+    width: 270px;
+    height: 450px;
+    text-align: center;
+    padding: 20px;
+    margin: auto 20px;
+    background: var(--dbs--background-main);
+    border-radius: 10px;
+}
+
+.book-card:hover{
+    box-shadow: 0 0 5px var(--dbs--highlight);
+}
+
+.book-card__img img{
+    width: 150px;
+}
+
+.book-card__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px;
+    color: var(--dbs--headline);
+}
+
+.book-card__writer {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--dbs--papragraph);
+}
+
+.book-card__categories {
+    color: var(--dbs--papragraph);
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.book-card__price {
+    margin-top: 8px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: var(--dbs--red-primary);
+}
+
+.book-card__price sub{
+    font-weight: 100;
+    padding: 0 5px;
+}
+
+.book-card__btn {
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--dbs--papragraph);
+    background: var(--dbs--button);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--dbs--stroke);
+    border-radius: 10px;
+}
