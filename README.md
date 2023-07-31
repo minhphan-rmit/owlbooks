@@ -39,7 +39,7 @@ This project can be used as a template for any bookshop website, or as a referen
 
 ## Contributing
 
-Any contributions you make are **greatly appreciated**. Please follow the steps below:
+Any contributions you make are **greatly appreciated**.
 
 ## Contact
 
