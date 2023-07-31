@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <style>
         body {
             margin: 0;
@@ -17,15 +18,6 @@
             background-color: #fff;
             font-family: 'Arial', sans-serif;
             line-height: 1.5;
-        }
-
-        .logo {
-            width: 100%;
-            height: 10vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 2rem;
         }
 
         img {
@@ -68,11 +60,22 @@
 </head>
 
 <body>
-    <div class="logo">
-        <img src="assets/logo/dbs-logo.png" alt="Domino Bookstore Logo">
-    </div>
+    <header class="header">
+        <nav class="header__nav">
+            <figure class="nav__logo">
+                <img class="nav__logo--graphic" src="assets/logo/dbs_logo.png" alt="Domino Bookstore Logo">
+                <div class="nav__logo--text">
+                    <figcaption class="nav__logo--text--domino">dom<span class="nav__logo--text--domino--i">i</span>no</figcaption>
+                    <figcaption class="nav__logo--text--bookstore">bookstore</figcaption>
+                </div>
+            </figure>
+            <ul class="nav__list">
+                <li class="nav__list-item"><a class="nav__item-link" href="#Home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="privacy-policy">
+    <div style="margin-top: 5vh;" class="privacy-policy">
         <p style="font-size: larger;"><strong>Privacy Policy for Domino Bookstore</strong></p>
         <p>Effective Date: 29th July 2023</p>
         <p>
