@@ -6,30 +6,14 @@
     /*Colors*/
     --dbs--background-main: #fffffe;
     --dbs--background-secondary: #f2f4f6;
-    --dbs--headline: #00214d;
-    --dbs--papragraph: #1b2d45;
-    --dbs--sub-headline: #1b2d45;
-    --dbs--button: #00ebc7;
-    --dbs--button-text: #00214d;
-    --dbs--stroke: #00214d;
-    --dbs--highlight: #00ebc7;
-    --dbs--red-primary: #ff5470;
-    --dbs--yellow-primary: #fde24f;
-
-    /*Footer colors*/
-    --dbs--footer-background: #001534;
-    --dbs--footer-headline: #fffffe;
-    --dbs--footer-papragraph: #b7c9e4;
-    --dbs--footer-link: #fde24f;
-    --dbs--footer-card-background: #fffffe;
-    --dbs--footer-card-headline: #001534;
-    --dbs--footer-card-paragraph: #1b2d45;
-
+    --dbs--navy-primary: #042F4B;
+    --dbs--beige-primary: #FFF6DA;
+    --dbs--nude-primary: #FBC99D;
+    --dbs--red-primary: #ED1250;
 
     /*Screen sizes*/
     --dbs--screen-sm: 768px;
     --dbs--screen-md: 992px;
-
 
 }
 
@@ -53,14 +37,15 @@ body{
     min-height: 10vh;
     width: 100%;
     background: var(--dbs--background-secondary);
+    position: sticky;
 }
 
-.header .header__nav {
+.header__nav {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 0 10px var(--dbs--stroke);
+    box-shadow: 0 0 10px var(--dbs--navy-primary);
     background: var(--dbs--background-secondary);
     position: fixed;
     left: 0;
@@ -68,125 +53,140 @@ body{
     padding: 20px 50px;
 }
 
-.header .header__nav .nav__logo {
+.nav__logo {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.header .header__nav .nav__logo img{
-    height: 40px;
+.nav__logo--graphic {
+    height: 70px;
     width: auto;
     cursor: pointer;
     margin: 8px 0;
 }
 
-.header .header__nav .nav__list{
+.nav__logo--text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.nav__logo--text--domino {
+    color: var(--dbs--navy-primary);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.nav__logo--text--domino--i {
+    color: var(--dbs--red-primary);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.nav__logo--text--bookstore {
+    color: var(--dbs--navy-primary);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav__list {
     list-style: none;
 }
 
-.header .header__nav .nav__list-item{
+.nav__list-item {
     display: inline-block;
     padding: 0 10px;
 }
 
-.header .header__nav .nav__list-item .nav__item-link{
+.nav__item-link {
     text-decoration: none;
-    color: var(--dbs--headline);
+    color: var(--dbs--navy-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-.header .header__nav .nav__list-item .nav__item-link:hover{
+.nav__item-link:hover {
     color: var(--dbs--red-primary);
 }
 
-/*Featured books*/
-.featured-books {
+/*best selling*/
+.bestselling {
+    min-height: 90vh;
     width: 100%;
-    height: 100vh;
-    padding: 70px 0;
-    background: var(--dbs--background-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.featured-books__headline {
+.bestselling__title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.bestselling__books {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
-    font-size: 45px;
-    font-weight: 800;
-    color: var(--dbs--headline);
+    flex-wrap: wrap;
 }
 
-.featured-books__box {
-    width: 95%;
-    height: 60vh;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+.book__card {
     overflow: hidden;
-    overflow-x: scroll;
-}
-
-.book-card {
-    width: 270px;
-    height: 450px;
+    background: var(--dbs--navy-primary);
+    color: var(--dbs--background-main);
     text-align: center;
-    padding: 20px;
-    margin: auto 20px;
-    background: var(--dbs--background-main);
-    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin: 2rem;
 }
 
-.book-card:hover{
-    box-shadow: 0 0 5px var(--dbs--highlight);
+.book__img {
+    height: 200px;
+    margin: 1rem;
+    transition: all 0.3s;
 }
 
-.book-card__img img{
-    width: 150px;
+.book__card:hover .book__img {
+    scale:  1.1;
 }
 
-.book-card__title {
+.book__card:hover {
+    box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.book__info-title, .book__info-price {
     font-size: 18px;
-    font-weight: 700;
-    margin: 10px;
-    color: var(--dbs--headline);
 }
 
-.book-card__writer {
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-    color: var(--dbs--papragraph);
-}
-
-.book-card__categories {
-    color: var(--dbs--papragraph);
-    margin-top: 8px;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.book-card__price {
-    margin-top: 8px;
-    font-weight: 800;
-    margin-bottom: 15px;
-    color: var(--dbs--red-primary);
-}
-
-.book-card__price sub{
-    font-weight: 100;
-    padding: 0 5px;
-}
-
-.book-card__btn {
-    padding: 8px 20px;
+.book__info-btn {
+    color: #ececec;
+    display: inline-block;
     text-decoration: none;
-    font-weight: 600;
-    color: var(--dbs--papragraph);
-    background: var(--dbs--button);
-    border-radius: 10px;
+    background-color: #2c3e50;
+    padding: 1.2rem 3rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    font-size: 14px;
+    transition: all 0.2s;
 }
 
+.book__info-btn:hover {
+    transform: scale(1.1);
+}
+
+
+/*Scroll bar*/
 ::-webkit-scrollbar{
     width: 10px;
     height: 10px;
@@ -199,37 +199,4 @@ body{
 ::-webkit-scrollbar-thumb{
     background: var(--dbs--stroke);
     border-radius: 10px;
-}
-
-/*Contact page*/
-.contact-form__form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.form__group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-}
-
-.group__label, 
-.group__span {
-    margin-bottom: 0.5em;
-}
-
-.group__input--checkbox, 
-.group__input--radio {
-    margin-left: 0.5em;
-}
-
-.group__button--submit, 
-.group__button--reset {
-    margin-right: 1em;
-}
-
-@media (max-width: 600px) {
-    .form__group {
-        flex-direction: column;
-    }
 }
