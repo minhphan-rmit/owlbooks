@@ -16,8 +16,8 @@ Acknowledgement: w3schools.com, stackoverflow.com, penguin.co.uk
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Minh Phan">
     <meta name="description"
-        content="Domino Bookstore - your gateway to a world of diverse books. Discover stories that captivate, inform, and inspire, one book at a time.">
-    <title>Domino Bookstore</title>
+        content="The Owl's Quill Bookstore offers a diverse selection of books for all ages, guided by the wisdom of literary exploration. Join us for engaging events and discover your next favorite read in our welcoming community bookstore.">
+    <title>Owl Books</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -33,25 +33,69 @@ Acknowledgement: w3schools.com, stackoverflow.com, penguin.co.uk
     <!--Webstie header-->
     <header class="header">
         <nav class="header__nav">
-            <figure class="nav__logo">
-                <img class="nav__logo--graphic" src="assets/logo/dbs_logo.png" alt="Domino Bookstore Logo">
-                <div class="nav__logo--text">
-                    <figcaption class="nav__logo--text--domino">dom<span class="nav__logo--text--domino--i">i</span>no</figcaption>
-                    <figcaption class="nav__logo--text--bookstore">bookstore</figcaption>
-                </div>
-            </figure>
-            <ul class="nav__list">
-                <li class="nav__list-item"><a class="nav__item-link" href="#Home">Home</a></li>
-                <li class="nav__list-item"><a class="nav__item-link" href="#About">Bestselling</a></li>
-                <li class="nav__list-item"><a class="nav__item-link" href="#Featured">Featured</a></li>
-                <li class="nav__list-item"><a class="nav__item-link" href="#More">More</a></li>
-                <li class="nav__list-item"><a class="nav__item-link" href="#preorder">Pre-order</a></li>
-            </ul>
+            <div class="wrapper">
+                <div class="logo"><img src="assets/logo/toqb_logo.png" alt="Domino Bookstore"></div>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li>
+                        <a href="#" class="desktop-item">Features</a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                        <ul class="drop-menu">
+                            <li><a href="#">Bestselling</a></li>
+                            <li><a href="#">New Arrivals</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-item">Books</a>
+                        <input type="checkbox" id="showMega">
+                        <label for="showMega" class="mobile-item">Books</label>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row">
+                                    <img src="https://media.giphy.com/media/3ohzdU2IVgD2goFS3S/giphy.gif" alt="Owls reading books">
+                                </div>
+                                <div class="row">
+                                    <header>Ficiton</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Action & adventure</a></li>
+                                        <li><a href="#">Classics</a></li>
+                                        <li><a href="#">Crime, thrillers & mysteries</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Non-fiction</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">Art, architecture & photography</a></li>
+                                        <li><a href="#">Biographies</a></li>
+                                        <li><a href="#">Business, economics & law</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Children</header>
+                                    <ul class="mega-links">
+                                        <li><a href="#">0 - 18 months</a></li>
+                                        <li><a href="#">18 months - 3 years</a></li>
+                                        <li><a href="#">3 - 5 years</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Pre-order</a></li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
         </nav>
     </header>
 
     <!--Bestselling-->
     <div class="product-gallery">
+        <h2 class="section-title">The books everyone is talking about</h2>
 		<div class="product-card">
 			<img class="product-card__image" src="assets/book_images/bestselling/none_of_this_is_true.jpg">
 			<h3 class="product-card__title">None of This Is True</h3>
@@ -98,6 +142,7 @@ Acknowledgement: w3schools.com, stackoverflow.com, penguin.co.uk
 		</div>
 	</div>
 
+    
     <!--Webstie footer-->
     <footer class="footer">
         <div class="footer__body">
@@ -113,10 +158,11 @@ Acknowledgement: w3schools.com, stackoverflow.com, penguin.co.uk
             </div>
 
             <div class="footer__books">
-                <h2 class="footer__books--title">More books</h2>
+                <h2 class="footer__books--title">Books</h2>
                 <ul class="books__list">
                     <li class="books__list-item"><a class="books__item-link" href="">Fiction</a></li>
                     <li class="books__list-item"><a class="books__item-link" href="">Non-fiction</a></li>
+                    <li class="books__list-item"><a class="books__item-link" href="">Children</a></li>
                 </ul>
             </div>
     
@@ -133,9 +179,9 @@ Acknowledgement: w3schools.com, stackoverflow.com, penguin.co.uk
         
 
         <div class="footer__end">
-            <img class="footer__end--logo" src="assets/logo/dbs_logo_white.png" alt="Domino Bookstore Logo">
+            <img class="footer__end--logo" src="assets/logo/toqb_logo.png" alt="Domino Bookstore Logo">
             <div class="footer__end--text">
-                <p>© 2021 Domino Bookstore. All rights reserved.</p>
+                <p>© 2021 Owl Books. All rights reserved.</p>
                 <p>702 Nguyen Van Linh Boulevard District 7, Ho Chi Minh City, Vietnam</p>
             </div>
         </div>
