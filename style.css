@@ -494,6 +494,27 @@ body {
     border-radius: 10px;
 }
 
+/*Media*/
+.iframe-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin: 133px 0 0 0;
+}
+
+.iframe-container div {
+    padding: 0 20px;
+}
+
+.iframe-container div h1 {
+    font-size: 24px;
+    color: var(--owl--teal-primary);
+    font-weight: 600;
+}
+
 /*Footer*/
 .footer {
     background: #000000;
