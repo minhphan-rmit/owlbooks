@@ -1,10 +1,10 @@
-# Domino Bookstore
+# Owl Books
 
-This repository contains the project files for the Assessment 1 of the COSC2430 - Web Programming course at RMIT University Vietnam. The task was to develop a static website for a fictional bookstore, "Domino Bookstore".
+This repository contains the project files for the Assessment 1 of the COSC2430 - Web Programming course at RMIT University Vietnam. The task was to develop a static website for a fictional bookstore, "Owl Books".
 
 ## About The Project
 
-The main objective of this project was to build a static website using HTML, CSS, and basic JavaScript. The website showcases different books and authors, providing a simple yet user-friendly interface for users to navigate through the books and their detailed information.
+The main objective of this project was to build a static website using HTML and CSS. The website showcases different books and authors, providing a simple yet user-friendly interface for users to navigate through the books and their detailed information.
 
 ## Features
 
