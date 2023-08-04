@@ -43,7 +43,7 @@ body {
 }
 
 /*Header*/
-.header__nav {
+.header {
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -52,7 +52,7 @@ body {
     margin-bottom: 100px;
 }
 
-.header__nav .wrapper {
+.header__nav {
     position: relative;
     max-width: 1300px;
     padding: 0px 30px;
@@ -63,19 +63,19 @@ body {
     justify-content: space-between;
 }
 
-.wrapper .logo {
+.header__nav .logo {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 15px 0px;
 }
 
-.wrapper .logo img {
+.header__nav .logo img {
     width: auto;
     height: 70px;
 }
 
-.wrapper .nav-links {
+.header__nav .nav-links {
     display: inline-flex;
 }
 
@@ -186,25 +186,25 @@ body {
     text-decoration: underline;
 }
 
-.wrapper .btn {
+.header__nav .btn {
     color: var(--owl--teal-primary);
     font-size: 20px;
     cursor: pointer;
     display: none;
 }
 
-.wrapper .btn.close-btn {
+.header__nav .btn.close-btn {
     position: absolute;
     right: 30px;
     top: 10px;
 }
 
 @media screen and (max-width: 970px) {
-    .wrapper .btn {
+    .header__nav .btn {
         display: block;
     }
 
-    .wrapper .nav-links {
+    .header__nav .nav-links {
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -346,7 +346,7 @@ body {
     }
 }
 
-.header__nav input {
+.header input {
     display: none;
 }
 
@@ -676,7 +676,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* Sets a gap between the sub-images */
 }
 
 .book-detail__buy {
@@ -701,7 +700,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* Sets a gap between the buttons */
 }
 
 .book-detail__button {
@@ -726,36 +724,51 @@ body {
     text-decoration: line-through;
 }
 
-.see-more-toggle {
-    display: none;
-}
 
-.see-more-label {
-    color: blue;
-    cursor: pointer;
-    display: block;
+.book-detail__summary {
+    width: 450px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: 0 0 5px rgba(0,0,0,0.5);
+
 }
 
 .book-detail__summary-text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 300px;
-    /* You can set this to whatever width you need */
-    transition: all 0.5s ease;
+    line-height: 1.4;
+    text-align: justify;
 }
 
-.see-more-toggle:checked+.see-more-label+.book-detail__summary-text {
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
+#check {
+    display: none;
 }
 
-.see-more-toggle:checked+.see-more-label::before {
-    content: "See Less";
+.book-detail__extended-summary {
+    display: none;
+    transition: 0.5 linear;
 }
 
+label {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--owl--teal-primary);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
 
+#check:checked ~ .book-detail__extended-summary {
+    display: block;
+}
+
+#check:checked ~ label {
+    visibility: hidden;
+}
+
+#check:checked ~ label:after {
+    content: "Show Less";
+    display: block;
+    visibility: visible;
+}
 
 /*Breadcrumb*/
 .breadcrumb {

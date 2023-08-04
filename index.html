@@ -17,11 +17,17 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
     <meta name="author" content="Minh Phan">
     <meta name="description"
         content="The Owl's Quill Bookstore offers a diverse selection of books for all ages, guided by the wisdom of literary exploration. Join us for engaging events and discover your next favorite read in our welcoming community bookstore.">
-    <title>Owl Books</title>
+    <title>Owl Books | Homepage</title>
+
+    <!--CSS reference-->
     <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!--Font Awesome reference-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Favicon-->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -33,10 +39,16 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
     <!--Webstie header-->
     <header class="header">
         <nav class="header__nav">
-            <div class="wrapper">
-                <div class="logo"><img src="assets/logo/toqb_logo.png" alt="Domino Bookstore"></div>
+                <!--Owl Books-->
+                <div class="logo">
+                    <img src="assets/logo/toqb_logo.png" alt="Owl Books">
+                </div>
+
+                <!--Responsive menu button-->
                 <input type="radio" name="slider" id="menu-btn">
                 <input type="radio" name="slider" id="close-btn">
+
+
                 <ul class="nav-links">
                     <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
                     <li><a href="#">Home</a></li>
@@ -90,7 +102,6 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                     <li><a href="#">Pre-order</a></li>
                 </ul>
                 <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-            </div>
         </nav>
     </header>
 
