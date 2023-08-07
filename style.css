@@ -417,7 +417,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    justify-content: space-between;
 }
 
 .articles__subs-title {
@@ -431,7 +431,7 @@ body {
 }
 .articles__sub {
     border-bottom: 1px solid rgba(0, 66, 90, 0.2);
-    padding: 30px 0;
+    padding: 0 0 50px 0;
 }
 
 .articles__sub:last-child {
@@ -545,7 +545,7 @@ body {
     width: 100%;
     max-width: 1300px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 70px;
     display: flex;
     align-items: center;
