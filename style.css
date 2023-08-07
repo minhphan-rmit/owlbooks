@@ -668,7 +668,7 @@ body {
     width: 100%;
     max-width: 1300px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 70px;
     display: flex;
     align-items: center;
@@ -873,6 +873,18 @@ body {
     font-weight: 800;
 }
 
+.book-detail__button--buy-now:hover {
+    background: var(--owl--teal-primary);
+    color: var(--owl--white-primary);
+    transition: .3s;
+}
+
+.book-detail__button--add-to-cart:hover {
+    background: var(--owl--teal-primary);
+    color: var(--owl--white-primary);
+    transition: .3s;
+}
+
 .book-detail__quantity {
     margin-top: 10px;
     display: flex;
@@ -901,9 +913,19 @@ body {
 
 
 .book-detail__summary {
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 70px;
     width: 100%;
     box-sizing: 0 0 5px rgba(0,0,0,0.5);
 
+}
+
+.book-detail__summary-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--owl--teal-primary);
+    margin-bottom: 20px;
 }
 
 .book-detail__summary-text {
@@ -920,7 +942,7 @@ body {
     transition: 0.5 linear;
 }
 
-label {
+.book-detail__summary label {
     display: inline-block;
     margin-top: 14px;
     color: var(--owl--teal-primary);
@@ -933,11 +955,11 @@ label {
     display: block;
 }
 
-#check:checked ~ label {
+#check:checked ~ .book-detail__summary label {
     visibility: hidden;
 }
 
-#check:checked ~ label:after {
+#check:checked ~ .book-detail__summary label:after {
     content: "Show Less";
     display: block;
     visibility: visible;

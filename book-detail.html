@@ -144,44 +144,6 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                         <h2 class="book-detail__author">Dominic Sandbrook</h2>
                     </div>
 
-                    <div class="book-detail__summary">
-                        <p class="book-detail__summary-text">
-                            Take a journey to a vanished world with the ADVENTURES IN TIME series - stories so exciting
-                            you
-                            won't believe they're all true
-                        </p>
-                        <input type="checkbox" id="check">
-                        <div class="book-detail__extended-summary">
-                            <p class="book-detail__summary-text">
-                                <br>
-                                <i>
-                                    'An invisible tremor ran through the Aztecs on the rooftops, a breathless gasp of
-                                    excitement. On the edge of the city the drummers struck up their rhythm. They were
-                                    coming...'
-                                </i>
-
-                                <br><br>
-                                With its vast cities, soaring pyramids and glittering treasure, the Aztec Empire was one
-                                of
-                                the greatest civilizations in the world, at once beautiful and terrible. At its head was
-                                the
-                                Emperor Montezuma, master of millions, who spoke with the voice of the gods and fed the
-                                sun
-                                with the blood of his prisoners. Yet Montezuma was troubled by terrifying omens. And
-                                when
-                                Spanish explorers landed on his shore to seek their fortunes, nothing would ever be the
-                                same
-                                again...
-                                <br><br>
-                                The Adventures in Time series brings the past alive for twenty-first century children.
-                                These
-                                stories are every bit as exciting as those of Harry Potter or Matilda Wormwood. The only
-                                difference is they actually happened...
-                            </p>
-                        </div>
-                        <label for="check">Read More</label>
-                    </div>
-
                     <div class="book-detail__price">
                         <span class="book-detail__price-current">$14.47</span>
                         <span class="book-detail__price-old">$16.45</span>
@@ -196,7 +158,110 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                     </div>
                 </div>
             </div>
+
+            <div class="book-detail__summary">
+                <h2 class="book-detail__summary-title">Summary</h2>
+                <p class="book-detail__summary-text">
+                    Take a journey to a vanished world with the ADVENTURES IN TIME series - stories so exciting
+                    you won't believe they're all true
+                </p>
+                <br>
+                <p>
+                    <i>
+                        'An invisible tremor ran through the Aztecs on the rooftops, a breathless gasp of
+                        excitement. On the edge of the city the drummers struck up their rhythm. They were
+                        coming...'
+                    </i>
+                </p>
+                <input type="checkbox" id="check">
+                <div class="book-detail__extended-summary">
+                    <p class="book-detail__summary-text">
+                        <br>
+                        With its vast cities, soaring pyramids and glittering treasure, the Aztec Empire was one
+                        of
+                        the greatest civilizations in the world, at once beautiful and terrible. At its head was
+                        the
+                        Emperor Montezuma, master of millions, who spoke with the voice of the gods and fed the
+                        sun
+                        with the blood of his prisoners. Yet Montezuma was troubled by terrifying omens. And
+                        when
+                        Spanish explorers landed on his shore to seek their fortunes, nothing would ever be the
+                        same
+                        again...
+                        <br><br>
+                        The Adventures in Time series brings the past alive for twenty-first century children.
+                        These
+                        stories are every bit as exciting as those of Harry Potter or Matilda Wormwood. The only
+                        difference is they actually happened...
+                    </p>
+                </div>
+                <label for="check">Read More</label>
+            </div>
         </div>
+
+        <!--Related books-->
+        <div class="bookshelf">
+            <div class="bookshelf__title-container">
+                <h1 class="bookshelf__title">Related books</h1>
+            </div>
+            <div class="bookshelf__books">
+                <a class="bookshelf__book-link" href="#">
+                    <div class="bookshelf__book">
+                        <img class="bookshelf__book-cover" src="assets/book_images/fiction/action/Monica.jpeg"
+                            alt="Monica">
+                        <h2 class="bookshelf__book-title">Monica</h2>
+                        <p class="bookshelf__book-author">Daniel Clowes</p>
+                    </div>
+                </a>
+                <a class="bookshelf__book-link" href="#">
+                    <div class="bookshelf__book">
+                        <img class="bookshelf__book-cover"
+                            src="assets/book_images/fiction/action/How_Sleep_the_Brave.jpeg" alt="How Sleep the Bravee">
+                        <h2 class="bookshelf__book-title">How Sleep the Brave</h2>
+                        <p class="bookshelf__book-author">H.E. Bates</p>
+                    </div>
+                </a>
+                <a class="bookshelf__book-link" href="#">
+                    <div class="bookshelf__book">
+                        <img class="bookshelf__book-cover" src="assets/book_images/fiction/action/On_The_Beach.jpeg"
+                            alt="On The Beach">
+                        <h2 class="bookshelf__book-title">On The Beach</h2>
+                        <p class="bookshelf__book-author">Nevil Shute</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--Newsletter-->
+        <section class="newsletter">
+            <div class="newsletter__left-column">
+                <div class="newsletter__contact-info">
+                    <h1 class="newsletter__contact-title">Contact us</h1>
+                    <p class="newsletter__contact-text"><i class="fa-solid fa-location-dot"></i>702 Nguyen Van Linh
+                        Boulevard District 7, Ho Chi Minh City, Vietnam</p>
+                    <p class="newsletter__contact-text"><i class="fa-solid fa-phone"></i>(+84) 907 459 988</p>
+                    <p class="newsletter__contact-text"><i class="fa-solid fa-envelope"></i>s3978598@rmit.edu.vn</p>
+                </div>
+                <div class="newsletter__sign-up">
+                    <h1 class="newsletter__sign-up-title">Sign up to Owl Books newsletter</h1>
+                    <form action="" method="POST" class="newsletter__form">
+                        <input type="email" name="email" placeholder="Email" class="newsletter__input-email">
+                        <input type="submit" name="submit" value="Sign Up" class="newsletter__input-submit">
+                    </form>
+                    <p class="newsletter__consent">By signing up, I confirm that I'm over 16. To find out what personal
+                        data
+                        we collect and how we use it, please visit our <a class="newsletter__consent-link"
+                            href="#">Privacy
+                            Policy</a></p>
+                </div>
+            </div>
+            <div class="newsletter__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0716553790694!2d106.69319177528834!3d10.728956760067037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2sRMIT%20University%20Vietnam%20-%20Saigon%20South%20campus!5e0!3m2!1sen!2s!4v1688978630747!5m2!1sen!2s"
+                    width="840" height="560" style="border:0;" allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="newsletter__iframe"></iframe>
+            </div>
+        </section>
     </main>
 
 
