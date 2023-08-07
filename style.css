@@ -360,6 +360,111 @@ body {
     display: none;
 }
 
+/*Aritcles section*/
+.articles {
+    display: flex;
+    gap: 1rem;
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.articles__main {
+    flex: 2;
+    margin-right: 1rem;
+    padding: 0 40px;
+    border-left: 1px solid rgba(0, 66, 90, 0.2);
+    border-right: 1px solid rgba(0, 66, 90, 0.2);
+}
+
+.articles__main-img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.articles__main-intro {
+    font-size: 16px;
+    margin-top: 1rem;
+    color: var(--owl--teal-primary);
+    margin-bottom: 0.1rem;
+    font-weight: 700;
+}
+
+.articles__main-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--owl--teal-primary);
+}
+
+.articles__main-excerpt {
+    margin: 1rem 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--owl--teal-primary);
+}
+
+.articles__main-link {
+    text-decoration: none;
+}
+
+.articles__main-link:hover .articles__main-title,
+.articles__main-link:hover .articles__main-intro {
+    color: var(--owl--green-primary);
+}
+
+.articles__subs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.articles__subs-title {
+    background: var(--owl--green-primary);
+    padding: 5px;
+}
+.articles__subs-title-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--owl--teal-primary);
+}
+.articles__sub {
+    border-bottom: 1px solid rgba(0, 66, 90, 0.2);
+    padding: 30px 0;
+}
+
+.articles__sub:last-child {
+    border-bottom: none;
+}
+
+.articles__sub-img {
+    max-width: 50%;
+    display: block;
+}
+
+.articles__sub-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.articles__sub-title {
+    font-size: 18px;
+    margin: 0.5rem 0;
+    color: var(--owl--teal-primary);
+    font-weight: 700;
+}
+
+.articles__sub-link {
+    text-decoration: none;
+}
+
+.articles__sub-link:hover .articles__sub-title {
+    color: var(--owl--green-primary);
+}
+
 
 /*Bookshelf styling*/
 .bookshelf {
