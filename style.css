@@ -42,6 +42,11 @@ body {
     flex-direction: column;
 }
 
+/*Main content margin*/
+.main-content {
+    margin-top: 100px;
+}
+
 /*Header*/
 .header {
     position: fixed;
@@ -49,41 +54,41 @@ body {
     width: 100%;
     background: var(--owl--white-primary);
     border-bottom: 2px solid var(--owl--green-primary);
-    margin-bottom: 100px;
 }
 
 .header__nav {
     position: relative;
     max-width: 1300px;
     padding: 0px 30px;
-    height: fit-content;
+    height: 100px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header__nav .logo {
+/*Logo*/
+.header__logo {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 15px 0px;
 }
 
-.header__nav .logo img {
+.header__logo img {
     width: auto;
     height: 70px;
 }
 
-.header__nav .nav-links {
+.header__nav-links {
     display: inline-flex;
 }
 
-.nav-links li {
+.header__nav-links li {
     list-style: none;
 }
 
-.nav-links li a {
+.header__nav-links li a {
     color: var(--owl--teal-primary);
     text-decoration: none;
     font-size: 18px;
@@ -93,29 +98,29 @@ body {
     transition: all 0.3s ease;
 }
 
-.nav-links li a:hover {
+.header__nav-links li a:hover {
     background: var(--owl--grey-primary);
 }
 
-.nav-links .mobile-item {
+.header__nav-links .mobile-item {
     display: none;
 }
 
-.nav-links .drop-menu {
+.header__nav-links .drop-menu {
     position: absolute;
     background: var(--owl--grey-primary);
     width: 180px;
     line-height: 45px;
-    top: 133px;
+    top: 100px;
     opacity: 0;
     visibility: hidden;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.nav-links li:hover .drop-menu,
-.nav-links li:hover .mega-box {
+.header__nav-links li:hover .drop-menu,
+.header__nav-links li:hover .mega-box {
     transition: all 0.3s ease;
-    top: 133px;
+    top: 100px;
     opacity: 1;
     visibility: visible;
 }
@@ -164,16 +169,16 @@ body {
     font-weight: 700;
 }
 
-.content .row .mega-links {
+.content .row .mheader__nav-links {
     margin-left: -40px;
     border-left: 1px solid rgba(0, 66, 90, 0.5);
 }
 
-.row .mega-links li {
+.row .mheader__nav-links li {
     padding: 0 20px;
 }
 
-.row .mega-links li a {
+.row .mheader__nav-links li a {
     padding: 0px;
     padding: 0 20px;
     color: var(--owl--teal-primary);
@@ -181,7 +186,7 @@ body {
     display: block;
 }
 
-.row .mega-links li a:hover {
+.row .mheader__nav-links li a:hover {
     color: var(--owl--green-primary);
     text-decoration: underline;
 }
@@ -204,7 +209,7 @@ body {
         display: block;
     }
 
-    .header__nav .nav-links {
+    .header__nav .header__nav-links {
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -236,7 +241,7 @@ body {
         border-radius: 10px;
     }
 
-    #menu-btn:checked~.nav-links {
+    #menu-btn:checked~.header__nav-links {
         left: 0%;
     }
 
@@ -248,17 +253,17 @@ body {
         display: block;
     }
 
-    .nav-links li {
+    .header__nav-links li {
         margin: 15px 10px;
     }
 
-    .nav-links li a {
+    .header__nav-links li a {
         padding: 0 20px;
         display: block;
         font-size: 20px;
     }
 
-    .nav-links .drop-menu {
+    .header__nav-links .drop-menu {
         position: static;
         opacity: 1;
         top: 65px;
@@ -276,11 +281,11 @@ body {
         max-height: 100%;
     }
 
-    .nav-links .desktop-item {
+    .header__nav-links .desktop-item {
         display: none;
     }
 
-    .nav-links .mobile-item {
+    .header__nav-links .mobile-item {
         display: block;
         color: var(--owl--teal-primary);
         font-size: 20px;
@@ -291,7 +296,7 @@ body {
         transition: all 0.3s ease;
     }
 
-    .nav-links .mobile-item:hover {
+    .header__nav-links .mobile-item:hover {
         background: var(--owl--white-primary);
     }
 
@@ -332,12 +337,12 @@ body {
         border-top: 0px;
     }
 
-    .content .row .mega-links {
+    .content .row .mheader__nav-links {
         border-left: 0px;
         padding-left: 15px;
     }
 
-    .row .mega-links li {
+    .row .mheader__nav-links li {
         margin: 0;
     }
 
@@ -356,7 +361,6 @@ body {
     width: 100%;
     max-width: 1300px;
     margin: auto;
-    margin-top: 100px;
 }
 
 .bookshelf__title {
