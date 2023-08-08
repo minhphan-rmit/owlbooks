@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Minh Phan">
-    <title>Owl Books | Privacy Policy</title>
+    <meta name="description"
+        content="The Owl's Quill Bookstore offers a diverse selection of books for all ages, guided by the wisdom of literary exploration. Join us for engaging events and discover your next favorite read in our welcoming community bookstore.">
+    <title>Owl Books | Contact Us</title>
 
     <!--CSS reference-->
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -24,6 +26,7 @@
 </head>
 
 <body>
+
     <!--Webstie header-->
     <header class="header">
         <nav class="header__nav">
@@ -106,69 +109,102 @@
     </header>
 
     <main class="main-content">
-        <h1>Owl Books Privacy Policy</h1>
+        <div class="contact">
+            <h1 class="contact__heading">Contact Us</h1>
+            <form class="contact__form" action="#" method="post">
+                <!-- Contact Purpose Dropdown -->
+                <div class="contact__form-field">
+                    <label class="contact__form-label" for="contactPurpose">Contact Purpose:</label>
+                    <select class="contact__form-select" id="contactPurpose" name="contactPurpose" required>
+                        <option value="sell">I want to sell books</option>
+                        <option value="buy">I want to buy books</option>
+                    </select>
+                </div>
 
-        <section>
-            <h2>Introduction</h2>
-            <p>At Owl Books, we are committed to protecting your personal information and your right to privacy. This Privacy Policy explains what information we collect, how we use it, and what rights you have in relation to it.</p>
-        </section>
+                <!-- Name Input -->
+                <div class="contact__form-field">
+                    <label class="contact__form-label" for="name">Name:</label>
+                    <input class="contact__form-input" type="text" id="name" name="name" required>
+                </div>
 
-        <section>
-            <h2>What Information We Collect</h2>
-            <p>We may collect the following information:</p>
-            <ul>
-                <li>Name</li>
-                <li>Email address</li>
-                <li>Phone number</li>
-                <li>Payment information</li>
-                <li>Other information relevant to customer surveys and offers</li>
-            </ul>
-        </section>
+                <!-- Email Input -->
+                <div class="contact__form-field">
+                    <label class="contact__form-label" for="email">Email:</label>
+                    <input class="contact__form-input" type="email" id="email" name="email" required>
+                </div>
 
-        <section>
-            <h2>How We Use Your Information</h2>
-            <p>We use the information we collect in various ways, including:</p>
-            <ul>
-                <li>To provide and maintain our service</li>
-                <li>To improve customer service</li>
-                <li>To process transactions</li>
-                <li>To send periodic emails</li>
-                <li>To follow up after correspondence</li>
-            </ul>
-        </section>
+                <!-- Phone Input -->
+                <div class="contact__form-field">
+                    <label class="contact__form-label" for="phone">Phone:</label>
+                    <input class="contact__form-input" type="tel" id="phone" name="phone" required>
+                </div>
 
-        <section>
-            <h2>How We Protect Your Information</h2>
-            <p>We implement a variety of security measures to maintain the safety of your personal information.</p>
-        </section>
+                <!-- Contact Preference -->
+                <div class="contact__form-field">
+                    <p class="contact__form-pref-label">Contact Preference:</p>
+                    <label class="contact__form-label-checkbox" for="prefEmail">
+                        <input type="checkbox" id="prefEmail" name="contactPreference[]" value="email"> By email
+                    </label>
+                    <label class="contact__form-label-checkbox" for="prefPhone">
+                        <input type="checkbox" id="prefPhone" name="contactPreference[]" value="phone"> By phone
+                    </label>
+                </div>
 
-        <section>
-            <h2>Cookies</h2>
-            <p>We use cookies to enhance your experience on our website. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</p>
-        </section>
+                <!-- Weekly Newsletter -->
+                <div class="contact__form-field">
+                    <p class="contact__form-news-label">Receive Weekly Newsletter:</p>
+                    <label class="contact__form-label-radio" for="newsletterYes">
+                        <input type="radio" id="newsletterYes" name="weeklyNewsletter" value="yes" checked> Yes
+                    </label>
+                    <label class="contact__form-label-radio" for="newsletterNo">
+                        <input type="radio" id="newsletterNo" name="weeklyNewsletter" value="no"> No
+                    </label>
+                </div>
 
-        <section>
-            <h2>Third-Party Links</h2>
-            <p>Our website may contain links to third-party websites. We are not responsible for the content or privacy practices of those third-party websites.</p>
-        </section>
+                <!-- Extra Notes Textarea -->
+                <div class="contact__form-field">
+                    <label class="contact__form-label" for="extraNotes">Extra Notes:</label>
+                    <textarea class="contact__form-textarea" id="extraNotes" name="extraNotes" rows="4"></textarea>
+                </div>
 
-        <section>
-            <h2>Your Rights</h2>
-            <p>You have the right to access, update, or delete your personal information at any time.</p>
-        </section>
+                <!-- Submit and Reset Buttons -->
+                <div class="contact__form-actions">
+                    <input class="contact__form-submit" type="submit" value="Submit">
+                    <input class="contact__form-reset" type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
 
-        <section>
-            <h2>Changes to This Privacy Policy</h2>
-            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
-        </section>
 
-        <section>
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <address>
-                <strong>Email:</strong> support@owlbooks.com<br>
-                <strong>Address:</strong> 123 Book Street, Book City, BK 12345
-            </address>
+        <!--Newsletter-->
+        <section class="newsletter">
+            <div class="newsletter__left-column">
+                <div class="newsletter__contact-info">
+                    <h1 class="newsletter__contact-title">Contact us</h1>
+                    <p class="newsletter__contact-text"><i class="fa-solid fa-location-dot"></i>702 Nguyen Van Linh
+                        Boulevard District 7, Ho Chi Minh City, Vietnam</p>
+                    <p class="newsletter__contact-text"><i class="fa-solid fa-phone"></i>(+84) 907 459 988</p>
+                    <p class="newsletter__contact-text"><i class="fa-solid fa-envelope"></i>s3978598@rmit.edu.vn</p>
+                </div>
+                <div class="newsletter__sign-up">
+                    <h1 class="newsletter__sign-up-title">Sign up to Owl Books newsletter</h1>
+                    <form action="" method="POST" class="newsletter__form">
+                        <input type="email" name="email" placeholder="Email" class="newsletter__input-email">
+                        <input type="submit" name="submit" value="Sign Up" class="newsletter__input-submit">
+                    </form>
+                    <p class="newsletter__consent">By signing up, I confirm that I'm over 16. To find out what personal
+                        data
+                        we collect and how we use it, please visit our <a class="newsletter__consent-link"
+                            href="#">Privacy
+                            Policy</a></p>
+                </div>
+            </div>
+            <div class="newsletter__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0716553790694!2d106.69319177528834!3d10.728956760067037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2sRMIT%20University%20Vietnam%20-%20Saigon%20South%20campus!5e0!3m2!1sen!2s!4v1688978630747!5m2!1sen!2s"
+                    width="840" height="560" style="border:0;" allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="newsletter__iframe"></iframe>
+            </div>
         </section>
     </main>
 
@@ -223,4 +259,7 @@
             </div>
         </div>
     </footer>
+
 </body>
+
+</html>

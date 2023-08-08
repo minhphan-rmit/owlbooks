@@ -133,6 +133,12 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                         alt="The Fall of The Aztecs">
                 </div>
 
+                <div class="book-detail__sub-images--popup">
+                    <span>&times;</span>
+                    <img src="assets/book_images/features/the_fall_of_the_aztecs.jpg" alt="The Fall of The Aztecs">
+
+                </div>
+
                 <div class="book-detail__image">
                     <img class="book-detail__main-image" src="assets/book_images/features/the_fall_of_the_aztecs.jpg"
                         alt="The Fall of The Aztecs">
@@ -315,6 +321,24 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
             </div>
         </div>
     </footer>
+
+    <!--Script for popup sub images-->
+    <script>
+        // Image click to show the popup
+        document.querySelectorAll('.book-detail__sub-images img').forEach(image => {
+            image.addEventListener('click', () => {
+                document.querySelector('.book-detail__sub-images--popup').style.display = 'block';
+                document.querySelector('.book-detail__sub-images--popup img').src = image.getAttribute('src');
+            });
+        });
+
+        // Span click to hide the popup
+        document.querySelectorAll('.book-detail__sub-images--popup span').forEach(span => {
+            span.addEventListener('click', () => {
+                document.querySelector('.book-detail__sub-images--popup').style.display = 'none';
+            });
+        });
+    </script>
 </body>
 
 </html>

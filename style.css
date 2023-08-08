@@ -18,6 +18,7 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
     --owl--green-primary: #BFDB38;
     --owl--teal-primary: #00425A;
     --owl--grey-primary: #f2f4f6;
+    --owl--yellow-primary: #ff8e05;
 
     /*Screen sizes*/
     --owl--screen-sm: 768px;
@@ -747,7 +748,8 @@ body {
 }
 
 .newsletter__input-submit:hover {
-    background: var(--owl--green-primary);
+    background: var(--owl--white-primary);
+    color: var(--owl--teal-primary);
     transition: .3s;
 }
 
@@ -795,6 +797,39 @@ body {
 
 .book-detail__sub-images {
     max-width: fit-content;
+}
+
+.book-detail__sub-images--popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.book-detail__sub-images--popup span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--owl--white-primary);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.book-detail__sub-images--popup img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid var(--owl--white-primary);
+    border-radius: 5px;
+    width: 500px;
+    object-fit: cover;
 }
 
 .book-detail__main-image {
@@ -996,6 +1031,105 @@ body {
     text-decoration: underline;
 }
 
+/*Contact page*/
+.contact {
+    width: 50%;
+    margin: auto;
+    margin-top: 45px;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--owl--green-primary);
+    border: 2px solid var(--owl--teal-primary);
+}
+
+.contact__form {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact__form-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact__form label,
+.contact__form-pref-label,
+.contact__form-news-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--owl--teal-primary);
+}
+
+.contact__heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--owl--teal-primary);
+    font-weight: 700;
+}
+
+.contact__form-field + .contact__form-field {
+    margin-top: 1rem;
+}
+
+.contact__form-submit,
+.contact__form-reset {
+    margin-top: 1rem;
+    background: var(--owl--teal-primary);
+    color: var(--owl--white-primary);
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.contact__form-submit:hover,
+.contact__form-reset:hover {
+    background: var(--owl--white-primary);
+    color: var(--owl--teal-primary);
+    transition: .3s;
+}
+
+.contact__form-select,
+.contact__form-input,
+.contact__form-textarea {
+    width: 50%;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--owl--teal-primary);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--owl--teal-primary);
+    background: var(--owl--white-primary);
+}
+
+.contact__form-select:focus,
+.contact__form-input:focus,
+.contact__form-textarea:focus {
+    outline: none;
+    border: 2px solid var(--owl--yellow-primary);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .contact__form-label,
+    .contact__form-input,
+    .contact__form-select,
+    .contact__form-textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        margin: auto;
+    }
+}
 
 /*Footer*/
 .footer {
