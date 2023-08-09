@@ -978,18 +978,20 @@ body {
     font-weight: 600;
 }
 
+.book-detail__extended-summary {
+    display: none; /* Add this to hide by default */
+}
+
 #check:checked ~ .book-detail__extended-summary {
     display: block;
 }
 
-#check:checked ~ .book-detail__summary label {
-    visibility: hidden;
+.read-more:before {
+    content: "Read More"; /* Default content */
 }
 
-#check:checked ~ .book-detail__summary label:after {
-    content: "Show Less";
-    display: block;
-    visibility: visible;
+#check:checked ~ .read-more:before {
+    content: "Show Less"; /* Change content when checkbox is checked */
 }
 
 /*Breadcrumb*/

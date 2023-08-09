@@ -15,7 +15,7 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Minh Phan">
-    <title>Children</title>
+    <title>Two Storm Wood</title>
 
     <!--CSS reference-->
     <link rel="stylesheet" href="/style.css" type="text/css">
@@ -84,25 +84,25 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                             <div class="row">
                                 <a href="/books/fiction.html" class="row-header">Fiction</a>
                                 <ul class="mega-links">
-                                    <li><a href="">Action & adventure</a></li>
-                                    <li><a href="#">Classics</a></li>
-                                    <li><a href="#">Crime, thrillers & mysteries</a></li>
+                                    <li><a href="/books/fiction.html">Action & adventure</a></li>
+                                    <li><a href="/books/fiction.html">Classics</a></li>
+                                    <li><a href="/books/fiction.html">Crime, thrillers & mysteries</a></li>
                                 </ul>
                             </div>
                             <div class="row">
                                 <a href="/books/non-fiction.html" class="row-header">Non-fiction</a>
                                 <ul class="mega-links">
-                                    <li><a href="#">Art, architecture & photography</a></li>
-                                    <li><a href="#">Biographies</a></li>
-                                    <li><a href="#">Business, economics & law</a></li>
+                                    <li><a href="/books/non-fiction.html">Art, architecture & photography</a></li>
+                                    <li><a href="/books/non-fiction.html">Biographies</a></li>
+                                    <li><a href="/books/non-fiction.html">Business, economics & law</a></li>
                                 </ul>
                             </div>
                             <div class="row">
                                 <a href="/books/children.html" class="row-header">Children</a>
                                 <ul class="mega-links">
-                                    <li><a href="#">0 - 18 months</a></li>
-                                    <li><a href="#">18 months - 3 years</a></li>
-                                    <li><a href="#">3 - 5 years</a></li>
+                                    <li><a href="/books/children.html">0 - 18 months</a></li>
+                                    <li><a href="/books/children.html">18 months - 3 years</a></li>
+                                    <li><a href="/books/children.html">3 - 5 years</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -117,105 +117,114 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
     </header>
 
     <main class="main-content">
+        <!--Breadcrumb-->
+        <section class="breadcrumb">
+            <ol class="breadcrumb__nav">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/index.html">Home</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Books</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/books/fiction.html">Fiction</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/books/fiction.html">Action & adventure</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/books/fiction/action-and-adventure/two-storm-wood-by-phillip-gray.html">Two Storm Wood</a></li>
+            </ol>
+        </section>
 
-        <!--Bookshelves-->
-        <!--0 - 18 months-->
-        <div class="bookshelf">
-            <div class="bookshelf__title-container">
-                <h1 class="bookshelf__title">0 - 18 months</h1>
-                <a class="bookshelf__view-all-link" href="/books/fiction/action-and-adventure.html">View all >></a>
+        <!--Book detail-->
+        <div class="book-detail">
+            <div class="book-detail__main-body">
+                <div class="book-detail__sub-images">
+                    <img class="book-detail__sub-image" src="https://m.media-amazon.com/images/I/613jaSsr4cL.jpg"
+                        alt="Two Storm Wood">
+                    <img class="book-detail__sub-image" src="https://m.media-amazon.com/images/I/61Rexh6M9DL.jpg"
+                        alt="Two Storm Wood">
+                    <img class="book-detail__sub-image" src="https://m.media-amazon.com/images/I/61hetveX79L.jpg"
+                        alt="Two Storm Wood">
+                </div>
+
+                <div class="book-detail__sub-images--popup">
+                    <span>&times;</span>
+                    <img src="https://m.media-amazon.com/images/I/613jaSsr4cL.jpg" alt="Two Storm Wood">
+                </div>
+
+                <div class="book-detail__image">
+                    <img class="book-detail__main-image" src="/assets/book_images/fiction/action/B1_two_storm_wood.jpeg"
+                        alt="Two Storm Wood">
+                </div>
+
+                <div class="book-detail__buy">
+                    <div class="book-detail__title">
+                        <h1 class="book-detail__name">Two Storm Wood</h1>
+                        <h2 class="book-detail__author">Philip Gray</h2>
+                    </div>
+
+                    <div class="book-detail__price">
+                        <span class="book-detail__price-current">$10.56</span>
+                        <span class="book-detail__price-old">$11.47</span>
+                    </div>
+                    <div class="book-detail__quantity">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" name="quantity" id="quantity" min="1" max="10" value="1">
+                    </div>
+                    <div class="book-detail__buttons">
+                        <button class="book-detail__button book-detail__button--add-to-cart">Add to cart</button>
+                        <button class="book-detail__button book-detail__button--buy-now">Buy now</button>
+                    </div>
+                </div>
             </div>
-            <div class="bookshelf__books">
-                <a class="bookshelf__book-link" href="#">
-                    <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/fiction/action/B1_two_storm_wood.jpeg"
-                            alt="Two Storm Wood">
-                        <h2 class="bookshelf__book-title">Two Storm Wood</h2>
-                        <p class="bookshelf__book-author">Philip Gray</p>
-                    </div>
-                </a>
-                <a class="bookshelf__book-link" href="#">
-                    <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover"
-                            src="assets/book_images/fiction/classics/B5_to_kill_a_mockingbird.jpg" alt="To Kill A Mockingbird">
-                        <h2 class="bookshelf__book-title">To Kill A Mockingbird</h2>
-                        <p class="bookshelf__book-author">Harper Lee</p>
-                    </div>
-                </a>
-                <a class="bookshelf__book-link" href="#">
-                    <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/fiction/crime/B7_The_Bullet_That_Missed.jpeg"
-                            alt="The Bullet That Missed">
-                        <h2 class="bookshelf__book-title">The Bullet That Missed</h2>
-                        <p class="bookshelf__book-author">Richard Osman</p>
-                    </div>
-                </a>
+
+            <div class="book-detail__summary">
+                <h2 class="book-detail__summary-title">Summary</h2>
+                <p class="book-detail__summary-text">
+                    THE GUNS ARE SILENT. THE DEAD ARE NOT
+                </p>
+                <br>
+                <p>
+                    'The world has been waiting for a worthy successor to Sebastian Faulks' Birdsong - now Philip Gray has delivered it' David Young, author of Stasi Child.
+                </p>
+                <input type="checkbox" id="check">
+                <div class="book-detail__extended-summary">
+                    <p class="book-detail__summary-text">
+                        <br>
+                        1919. On the battlefields of northern France, the guns of the Great War are silent. Special battalions now face the task of gathering up the dead for mass burial.
+                        <br><br>
+                        Amy Vanneck's fiancé is one soldier lost amongst many. She heads to France, determined to discover what became of the man she loved.
+                        <br><br>
+                        Meanwhile, Captain Mackenzie cannot bring himself to go home until his fallen comrades are laid to rest. His task is upended when a gruesome discovery is made beneath the ruins of a German strongpoint.
+                        <br><br>
+                        It soon becomes clear that what Mackenzie has uncovered is a war crime of inhuman savagery. As the dark truth leaches out, both he and Amy are drawn into the hunt for a psychopath, one for whom the atrocity at Two Storm Wood is not an end, but a beginning.
+                    </p>
+                </div>
+                <label class="read-more" for="check"></label>
             </div>
         </div>
 
-        <!--18 months - 3 years-->
+        <!--Related books-->
         <div class="bookshelf">
             <div class="bookshelf__title-container">
-                <h1 class="bookshelf__title">18 months - 3 years</h1>
-                <a class="bookshelf__view-all-link" href="/books/fiction/action-and-adventure.html">View all >></a>
+                <h1 class="bookshelf__title">Related books</h1>
             </div>
             <div class="bookshelf__books">
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/fiction/action-and-adventure/the-last-orphan-by-gregg-hurwitz.html">
                     <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/fiction/action/B1_two_storm_wood.jpeg"
-                            alt="Two Storm Wood">
-                        <h2 class="bookshelf__book-title">Two Storm Wood</h2>
-                        <p class="bookshelf__book-author">Philip Gray</p>
+                        <img class="bookshelf__book-cover" src="/assets/book_images/fiction/action/B2_the_last_orphan.jpeg"
+                            alt="The Last Orphan">
+                        <h2 class="bookshelf__book-title">The Last Orphan</h2>
+                        <p class="bookshelf__book-author">Gregg Hurwitz</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/fiction/action-and-adventure/with-a-mind-to-kill-by-anthony-horowitz.html">
                     <div class="bookshelf__book">
                         <img class="bookshelf__book-cover"
-                            src="assets/book_images/fiction/classics/B5_to_kill_a_mockingbird.jpg" alt="To Kill A Mockingbird">
-                        <h2 class="bookshelf__book-title">To Kill A Mockingbird</h2>
-                        <p class="bookshelf__book-author">Harper Lee</p>
+                            src="/assets/book_images/fiction/action/B3_with_a_mind_to_kill.jpeg" alt="With a Mind to Kill">
+                        <h2 class="bookshelf__book-title">With a Mind to Kill</h2>
+                        <p class="bookshelf__book-author">Anthony Horowitz</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/fiction/action-and-adventure/the-thirty-nine-steps-by-john-buchan.html">
                     <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/fiction/crime/B7_The_Bullet_That_Missed.jpeg"
-                            alt="The Bullet That Missed">
-                        <h2 class="bookshelf__book-title">The Bullet That Missed</h2>
-                        <p class="bookshelf__book-author">Richard Osman</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <!--3 - 5 years-->
-        <div class="bookshelf">
-            <div class="bookshelf__title-container">
-                <h1 class="bookshelf__title">3 - 5 years</h1>
-                <a class="bookshelf__view-all-link" href="/books/fiction/action-and-adventure.html">View all >></a>
-            </div>
-            <div class="bookshelf__books">
-                <a class="bookshelf__book-link" href="#">
-                    <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/fiction/action/B1_two_storm_wood.jpeg"
-                            alt="Two Storm Wood">
-                        <h2 class="bookshelf__book-title">Two Storm Wood</h2>
-                        <p class="bookshelf__book-author">Philip Gray</p>
-                    </div>
-                </a>
-                <a class="bookshelf__book-link" href="#">
-                    <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover"
-                            src="assets/book_images/fiction/classics/B5_to_kill_a_mockingbird.jpg" alt="To Kill A Mockingbird">
-                        <h2 class="bookshelf__book-title">To Kill A Mockingbird</h2>
-                        <p class="bookshelf__book-author">Harper Lee</p>
-                    </div>
-                </a>
-                <a class="bookshelf__book-link" href="#">
-                    <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/fiction/crime/B7_The_Bullet_That_Missed.jpeg"
-                            alt="The Bullet That Missed">
-                        <h2 class="bookshelf__book-title">The Bullet That Missed</h2>
-                        <p class="bookshelf__book-author">Richard Osman</p>
+                        <img class="bookshelf__book-cover" src="/assets/book_images/fiction/action/Best1_The_Thirty-Nine_Steps .jpeg"
+                            alt="The Thirty Nine Steps">
+                        <h2 class="bookshelf__book-title">The Thirty Nine Steps</h2>
+                        <p class="bookshelf__book-author">John Buchan</p>
                     </div>
                 </a>
             </div>
@@ -297,6 +306,23 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
         </div>
     </footer>
 
+    <!--Script for popup sub images-->
+    <script>
+        // Image click to show the popup
+        document.querySelectorAll('.book-detail__sub-images img').forEach(image => {
+            image.addEventListener('click', () => {
+                document.querySelector('.book-detail__sub-images--popup').style.display = 'block';
+                document.querySelector('.book-detail__sub-images--popup img').src = image.getAttribute('src');
+            });
+        });
+
+        // Span click to hide the popup
+        document.querySelectorAll('.book-detail__sub-images--popup span').forEach(span => {
+            span.addEventListener('click', () => {
+                document.querySelector('.book-detail__sub-images--popup').style.display = 'none';
+            });
+        });
+    </script>
 </body>
 
 </html>
