@@ -171,10 +171,11 @@ body {
     object-fit: cover;
 }
 
-.content .row header {
+.content .row .row-header {
     color: var(--owl--teal-primary);
     font-size: 18px;
     font-weight: 700;
+    margin-left: -20px;
 }
 
 .content .row .mega-links {
@@ -354,7 +355,7 @@ body {
         margin: 0;
     }
 
-    .content .row header {
+    .content .row .row-header {
         font-size: 19px;
     }
 }
