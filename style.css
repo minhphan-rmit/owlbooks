@@ -535,10 +535,7 @@ body {
     font-size: 14px;
     font-weight: 700;
     margin-top: 10px;
-    overflow: hidden;
     text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     width: 200px;
 }
 

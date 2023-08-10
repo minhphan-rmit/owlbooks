@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Minh Phan">
+    <title>The Story of Art without Men</title>
+
+    <!--CSS reference-->
+    <link rel="stylesheet" href="/style.css" type="text/css">
+
+    <!--Font Awesome reference-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png">
+</head>
+
+<body>
+    <!--Webstie header-->
+    <header class="header">
+        <nav class="header__nav">
+            <!--Logo section-->
+            <div class="header__logo">
+                <img src="/assets/logo/toqb_logo.png" alt="Owl Books">
+            </div>
+
+            <!--Responsive menu buttons-->
+            <input class="header__menu-btn" type="radio" name="slider" id="menu-btn"><!--Menu open button-->
+            <input class="header__close-btn" type="radio" name="slider" id="close-btn"><!--Menu close button-->
+
+            <!--Navigation links-->
+            <ul class="header__nav-links">
+                <!--Close button for the menu-->
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+
+                <!--Regular navigation items-->
+                <li class="header__nav-item"><a href="#">Home</a></li>
+
+                <!--Navigation item with drop down menu-->
+                <li class="header__nav-item header__nav-item--dropdown">
+                    <a href="/about/overview.html" class="desktop-item">About us</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                    <ul class="drop-menu">
+                        <li><a href="/about/overview.html">Overview</a></li>
+                        <li><a href="/about/policies.html">Policies</a></li>
+                    </ul>
+                </li>
+
+                <!--Regular navigation items
+                <li class="header__nav-item"><a href="#">Bestselling</a></li>
+                <li class="header__nav-item"><a href="#">Coming soon</a></li>
+                -->
+
+                <!--Navigation item with mega menu-->
+                <li class="header__nav-item header__nav-item--mega">
+                    <a href="#" class="desktop-item">Books</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Books</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="https://media.giphy.com/media/3ohzdU2IVgD2goFS3S/giphy.gif"
+                                    alt="Owls reading books">
+                            </div>
+                            <div class="row">
+                                <a href="/books/fiction.html" class="row-header">Fiction</a>
+                                <ul class="mega-links">
+                                    <li><a href="/books/fiction.html">Action & adventure</a></li>
+                                    <li><a href="/books/fiction.html">Classics</a></li>
+                                    <li><a href="/books/fiction.html">Crime, thrillers & mysteries</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <a href="/books/non-fiction.html" class="row-header">Non-fiction</a>
+                                <ul class="mega-links">
+                                    <li><a href="/books/non-fiction.html">Art, architecture & photography</a></li>
+                                    <li><a href="/books/non-fiction.html">Biographies</a></li>
+                                    <li><a href="/books/non-fiction.html">Business, economics & law</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <a href="/books/children.html" class="row-header">Children</a>
+                                <ul class="mega-links">
+                                    <li><a href="/books/children.html">0 - 18 months</a></li>
+                                    <li><a href="/books/children.html">18 months - 3 years</a></li>
+                                    <li><a href="/books/children.html">3 - 5 years</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!--Regular navigation items-->
+                <li class="header__nav-item"><a href="/preorder.html">Pre-order</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!--Breadcrumb-->
+        <section class="breadcrumb">
+            <ol class="breadcrumb__nav">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/index.html">Home</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/index.html">Books</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/books/non-fiction.html">Non-fiction</a>
+                </li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/books/non-fiction.html">Art,
+                        architecture & photography</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link"
+                        href="/books/non-fiction/art/the-story-of-art-without-men-by-katy-hessel.html">The Story of Art without Men</a>
+                </li>
+            </ol>
+        </section>
+
+        <!--Book detail-->
+        <div class="book-detail">
+            <div class="book-detail__main-body">
+                <div class="book-detail__sub-images">
+                    <img class="book-detail__sub-image" src="https://m.media-amazon.com/images/I/611uCA6-fRL._AC_SX679_.jpg" alt="The Story of Art without Men">
+                    <img class="book-detail__sub-image" src="https://m.media-amazon.com/images/I/711ELNJcgjL._AC_SX679_.jpg" alt="The Story of Art without Men">
+                    <img class="book-detail__sub-image" src="https://m.media-amazon.com/images/I/61fMTcHD-QL._AC_SX679_.jpg" alt="The Story of Art without Men">
+                    <img class="book-detail__sub-image" src="https://m.media-amazon.com/images/I/61gMokYs4jL._AC_SX679_.jpg" alt="The Story of Art without Men">
+                    <img class="book-detail__sub-image" src="https://m.media-amazon.com/images/I/61RlvsHhTQL._AC_SX679_.jpg" alt="The Story of Art without Men">
+                </div>
+
+                <div class="book-detail__sub-images--popup">
+                    <span>&times;</span>
+                    <img src="https://m.media-amazon.com/images/I/81VZLkEkt8L._AC_SY879_.jpg" alt="The Story of Art without Men">
+                </div>
+
+                <div class="book-detail__image">
+                    <img class="book-detail__main-image" src="https://m.media-amazon.com/images/I/81VZLkEkt8L._AC_SY879_.jpg"
+                        alt="The Story of Art without Men">
+                </div>
+
+                <div class="book-detail__buy">
+                    <div class="book-detail__title">
+                        <h1 class="book-detail__name">The Story of Art without Men</h1>
+                        <h2 class="book-detail__author">Katy Hessel</h2>
+                    </div>
+
+                    <div class="book-detail__price">
+                        <span class="book-detail__price-current">$35.21</span>
+                        <span class="book-detail__price-old">$36.45</span>
+                    </div>
+                    <div class="book-detail__quantity">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" name="quantity" id="quantity" min="1" max="10" value="1">
+                    </div>
+                    <div class="book-detail__buttons">
+                        <button class="book-detail__button book-detail__button--add-to-cart">Add to cart</button>
+                        <button class="book-detail__button book-detail__button--buy-now">Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-detail__summary">
+                <h2 class="book-detail__summary-title">Summary</h2>
+                <p class="book-detail__summary-text">
+                    How many women artists do you know? Who makes art history? Did women even work as artists before the twentieth century? And what is the Baroque anyway?
+                </p>
+                <input type="checkbox" id="check">
+                <div class="book-detail__extended-summary">
+                    <p class="book-detail__summary-text">
+                        <br>
+                        Discover the glittering Sofonisba Anguissola of the Renaissance, the radical work of Harriet Powers in the nineteenth-century USA and the artist who really invented the Readymade. Explore the Dutch Golden Age, the astonishing work of post-War artists in Latin America and the women artists defining art in the 2020s. Have your sense of art history overturned, and your eyes opened to many art forms often overlooked or dismissed. From the Cornish coast to Manhattan, Nigeria to Japan, this is the history of art as it's never been told before.
+                    </p>
+                </div>
+                <label class="read-more" for="check"></label>
+            </div>
+        </div>
+
+        <!--Related books-->
+        <div class="bookshelf">
+            <div class="bookshelf__title-container">
+                <h1 class="bookshelf__title">Related books</h1>
+            </div>
+            <div class="bookshelf__books">
+                <a class="bookshelf__book-link"
+                    href="/books/non-fiction/art/the-world-according-to-colour-by-james-fox.html">
+                    <div class="bookshelf__book">
+                        <img class="bookshelf__book-cover" src="https://m.media-amazon.com/images/I/71XRM32s9IL.jpg"
+                            alt="The World According to Colour">
+                        <h2 class="bookshelf__book-title">The World According to Colour</h2>
+                        <p class="bookshelf__book-author">James Fox</p>
+                    </div>
+                </a>
+                <a class="bookshelf__book-link"
+                    href="/books/non-fiction/art/eat-drink-nap-by-soho-house-uk-limited.html">
+                    <div class="bookshelf__book">
+                        <img class="bookshelf__book-cover" src="https://m.media-amazon.com/images/I/A1wdOj7mlPL.jpg"
+                            alt="Eat, Drink, Nap">
+                        <h2 class="bookshelf__book-title">Eat, Drink, Nap</h2>
+                        <p class="bookshelf__book-author">Soho House UK Limited</p>
+                    </div>
+                </a>
+                <a class="bookshelf__book-link"
+                    href="/books/non-fiction/art/see-what-youre-missing-by-will-gompertz.html">
+                    <div class="bookshelf__book">
+                        <img class="bookshelf__book-cover"
+                            src="https://m.media-amazon.com/images/I/71xVTMQE2+L.jpg"
+                            alt="See What You're Missing">
+                        <h2 class="bookshelf__book-title">See What You're Missing</h2>
+                        <p class="bookshelf__book-author">Will Gompertz</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--Newsletter-->
+        <section class="newsletter">
+            <div class="newsletter__left-column">
+                <div class="newsletter__contact-info">
+                    <h1 class="newsletter__contact-title">Contact us</h1>
+                    <p class="newsletter__contact-text"><i class="fa-solid fa-location-dot"></i>702 Nguyen Van Linh
+                        Boulevard District 7, Ho Chi Minh City, Vietnam</p>
+                    <p class="newsletter__contact-text"><i class="fa-solid fa-phone"></i>(+84) 907 459 988</p>
+                    <p class="newsletter__contact-text"><i class="fa-solid fa-envelope"></i>s3978598@rmit.edu.vn</p>
+                </div>
+                <div class="newsletter__sign-up">
+                    <h1 class="newsletter__sign-up-title">Sign up to Owl Books newsletter</h1>
+                    <form action="" method="POST" class="newsletter__form">
+                        <input type="email" name="email" placeholder="Email" class="newsletter__input-email">
+                        <input type="submit" name="submit" value="Sign Up" class="newsletter__input-submit">
+                    </form>
+                    <p class="newsletter__consent">By signing up, I confirm that I'm over 16. To find out what personal
+                        data we collect and how we use it, please visit our <a class="newsletter__consent-link"
+                            href="/policies/privacy-policy.html">Privacy Policy</a></p>
+                </div>
+            </div>
+            <div class="newsletter__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0716553790694!2d106.69319177528834!3d10.728956760067037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2sRMIT%20University%20Vietnam%20-%20Saigon%20South%20campus!5e0!3m2!1sen!2s!4v1688978630747!5m2!1sen!2s"
+                    width="840" height="560" style="border:0;" allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="newsletter__iframe"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!--Webstie footer-->
+    <footer class="footer">
+        <div class="footer__body">
+            <div class="footer__useful-links">
+                <h2 class="footer__useful-links--title">Useful links</h2>
+                <ul class="useful-links__list">
+                    <li class="useful-links__list-item"><a class="useful-links__item-link"
+                            href="/about/overview.html">About Us</a></li>
+                    <li class="useful-links__list-item"><a class="useful-links__item-link"
+                            href="/policies/privacy-policy.html">Privacy Policy</a></li>
+                    <li class="useful-links__list-item"><a class="useful-links__item-link"
+                            href="/policies/terms.html">Terms</a></li>
+                    <li class="useful-links__list-item"><a class="useful-links__item-link"
+                            href="/policies/copyright.html">Copyright</a></li>
+                    <li class="useful-links__list-item"><a class="useful-links__item-link" href="/contact.html">Contact
+                            Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__books">
+                <h2 class="footer__books--title">Books</h2>
+                <ul class="books__list">
+                    <li class="books__list-item"><a class="books__item-link" href="/books/fiction.html">Fiction</a></li>
+                    <li class="books__list-item"><a class="books__item-link"
+                            href="/books/non-fiction.html">Non-fiction</a></li>
+                    <li class="books__list-item"><a class="books__item-link" href="/books/children.html">Children</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__social">
+                <h2 class="footer__social--title">Stay connected</h2>
+                <ul class="social__list">
+                    <li class="social__list-item"><a class="social__item-link"
+                            href="https://www.facebook.com/pnm0905"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="social__list-item"><a class="social__item-link"
+                            href="https://www.instagram.com/minhpnh/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="social__list-item"><a class="social__item-link"
+                            href="https://www.linkedin.com/in/minhpnh/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="social__list-item"><a class="social__item-link"
+                            href="https://github.com/minhphan-rmit"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer__end">
+            <img class="footer__end--logo" src="/assets/logo/toqb_logo.png" alt="Owl Books Logo">
+            <div class="footer__end--text">
+                <p>© 2023 Owl Books. All rights reserved.</p>
+                <p>702 Nguyen Van Linh Boulevard District 7, Ho Chi Minh City, Vietnam</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Script for popup sub images-->
+    <script>
+        // Image click to show the popup
+        document.querySelectorAll('.book-detail__sub-images img').forEach(image => {
+            image.addEventListener('click', () => {
+                document.querySelector('.book-detail__sub-images--popup').style.display = 'block';
+                document.querySelector('.book-detail__sub-images--popup img').src = image.getAttribute('src');
+            });
+        });
+
+        // Span click to hide the popup
+        document.querySelectorAll('.book-detail__sub-images--popup span').forEach(span => {
+            span.addEventListener('click', () => {
+                document.querySelector('.book-detail__sub-images--popup').style.display = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
