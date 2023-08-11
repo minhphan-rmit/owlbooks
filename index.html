@@ -5,7 +5,7 @@ Semester: 2023B
 Assessment: Assignment 1
 Author: Phan Nhat Minh
 ID: s3978598
-Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.uk, Coding Nepal, Codepen.io, freepik.com, unsplash.com, giphy.com, fontawesome.com, google.com, GitHub Copilot.
+Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.uk, Coding Nepal, Codepen.io, freepik.com, unsplash.com, giphy.com, fontawesome.com, google.com, font.google.com, youtube.com
 -->
 
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
         <nav class="header__nav">
             <!--Logo section-->
             <div class="header__logo">
-                <img src="/assets/logo/toqb_logo.png" alt="Owl Books">
+                <a href="/index.html" class="header__logo-link"><img src="/assets/logo/toqb_logo.png" class="header__logo-img" alt="Owl Books"></a>
             </div>
 
             <!--Responsive menu buttons-->
@@ -54,27 +54,22 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                 <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
 
                 <!--Regular navigation items-->
-                <li class="header__nav-item"><a href="#">Home</a></li>
+                <li class="header__nav-item"><a href="/index.html">Home</a></li>
 
                 <!--Navigation item with drop down menu-->
                 <li class="header__nav-item header__nav-item--dropdown">
                     <a href="/about/overview.html" class="desktop-item">About us</a>
                     <input type="checkbox" id="showDrop">
-                    <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                    <label for="showDrop" class="mobile-item">About us</label>
                     <ul class="drop-menu">
                         <li><a href="/about/overview.html">Overview</a></li>
                         <li><a href="/about/policies.html">Policies</a></li>
                     </ul>
                 </li>
 
-                <!--Regular navigation items
-                <li class="header__nav-item"><a href="#">Bestselling</a></li>
-                <li class="header__nav-item"><a href="#">Coming soon</a></li>
-                -->
-
                 <!--Navigation item with mega menu-->
                 <li class="header__nav-item header__nav-item--mega">
-                    <a href="#" class="desktop-item">Books</a>
+                    <a href="/index.html" class="desktop-item">Books</a>
                     <input type="checkbox" id="showMega">
                     <label for="showMega" class="mobile-item">Books</label>
                     <div class="mega-box">
@@ -118,7 +113,9 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
         </nav>
     </header>
 
+    <!--Main content of the page exclude header and footer-->
     <main class="main-content">
+        
         <!-- Articles Section -->
         <section class="articles">
             <!-- Main Post -->
@@ -144,38 +141,42 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                 <div class="articles__subs-title">
                     <h2 class="articles__subs-title-text">More articles</h2>
                 </div>
-                <article class="articles__sub">
-                    <a href="/articles/article2.html" class="articles__sub-link">
-                        <div class="articles__sub-container">
-                            <img src="/assets/article_covers/article_2_cover.jpg"
-                                alt="The Hidden Gems of Indie Bookstores" class="articles__sub-img">
-                            <h3 class="articles__sub-title">The Hidden Gems of Indie Bookstores</h3>
-                        </div>
-                    </a>
-                </article>
 
-                <article class="articles__sub">
-                    <a href="/articles/article3.html" class="articles__sub-link">
-                        <div class="articles__sub-container">
-                            <img src="/assets/article_covers/article_3_cover.jpg" alt="The Joy of Discovering New Genres"
-                                class="articles__sub-img">
-                            <h3 class="articles__sub-title">The Joy of Discovering New Genres</h3>
-                        </div>
-
-                    </a>
-                </article>
-
-                <article class="articles__sub">
-                    <a href="/articles/article4.html" class="articles__sub-link">
-                        <div class="articles__sub-container">
-                            <img src="assets/article_covers/article_4_cover.jpg"
-                                alt="Sustainable Reading: The Rise of Eco-friendly Book Practices"
-                                class="articles__sub-img">
-                            <h3 class="articles__sub-title">Sustainable Reading: The Rise of Eco-friendly Book Practices
-                            </h3>
-                        </div>
-                    </a>
-                </article>
+                <div class="articles__subs-container">
+                    <article class="articles__sub">
+                        <a href="/articles/article2.html" class="articles__sub-link">
+                            <div class="articles__sub-container">
+                                <img src="/assets/article_covers/article_2_cover.jpg"
+                                    alt="The Hidden Gems of Indie Bookstores" class="articles__sub-img">
+                                <h3 class="articles__sub-title">The Hidden Gems of Indie Bookstores</h3>
+                            </div>
+                        </a>
+                    </article>
+    
+                    <article class="articles__sub">
+                        <a href="/articles/article3.html" class="articles__sub-link">
+                            <div class="articles__sub-container">
+                                <img src="/assets/article_covers/article_3_cover.jpg"
+                                    alt="The Joy of Discovering New Genres" class="articles__sub-img">
+                                <h3 class="articles__sub-title">The Joy of Discovering New Genres</h3>
+                            </div>
+    
+                        </a>
+                    </article>
+    
+                    <article class="articles__sub">
+                        <a href="/articles/article4.html" class="articles__sub-link">
+                            <div class="articles__sub-container">
+                                <img src="assets/article_covers/article_4_cover.jpg"
+                                    alt="Sustainable Reading: The Rise of Eco-friendly Book Practices"
+                                    class="articles__sub-img">
+                                <h3 class="articles__sub-title">Sustainable Reading: The Rise of Eco-friendly Book Practices
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                
             </aside>
         </section>
 
@@ -186,26 +187,31 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                 <h1 class="bookshelf__title">Bestselling</h1>
             </div>
             <div class="bookshelf__books">
-                <a class="bookshelf__book-link" href="#">
+                <!--Book 1-->
+                <a class="bookshelf__book-link" href="/books/fiction/action-and-adventure/the-thirty-nine-steps-by-john-buchan.html">
                     <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/fiction/action/Best1_The_Thirty-Nine_Steps .jpeg"
-                            alt="The Thirty-Nine Steps">
+                        <img class="bookshelf__book-cover"
+                            src="/assets/book_images/fiction/action/Best1_The_Thirty-Nine_Steps.jpeg"
+                            alt="The Thirty-Nine Steps Cover">
                         <h2 class="bookshelf__book-title">The Thirty-Nine Steps</h2>
                         <p class="bookshelf__book-author">John Buchan</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <!--Book 2-->
+                <a class="bookshelf__book-link" href="/books/fiction/crime-thrillers-mysteries/the-second-murderer-by-denise-mina.html">
                     <div class="bookshelf__book">
                         <img class="bookshelf__book-cover"
-                            src="assets/book_images/fiction/crime/Best2_The_Second_Murderer.jpeg" alt="The Second Murderer">
+                            src="/assets/book_images/fiction/crime/Best2_The_Second_Murderer.jpeg"
+                            alt="The Second Murderer Cover">
                         <h2 class="bookshelf__book-title">The Second Murderer</h2>
                         <p class="bookshelf__book-author">Denise Mina</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <!--Book 3-->
+                <a class="bookshelf__book-link" href="/books/non-fiction/business/atomic-habits-by-james-clear.html">
                     <div class="bookshelf__book">
                         <img class="bookshelf__book-cover"
-                            src="assets/book_images/non-fiction/business/Best3_Atomic_Habits .jpeg" alt="Atomic Habits">
+                            src="/assets/book_images/non-fiction/business/Best3_Atomic_Habits .jpeg" alt="Atomic Habits Cover">
                         <h2 class="bookshelf__book-title">Atomic Habits</h2>
                         <p class="bookshelf__book-author">James Clear</p>
                     </div>
@@ -219,23 +225,28 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                 <h1 class="bookshelf__title">Coming soon</h1>
             </div>
             <div class="bookshelf__books">
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/non-fiction/art/shakespeare-by-judi-dench.html">
                     <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/coming_soon/CS1_Shakespeare.jpg" alt="Shakespeare">
+                        <img class="bookshelf__book-cover" src="assets/book_images/coming_soon/CS1_Shakespeare.jpg"
+                            alt="Shakespeare">
                         <h2 class="bookshelf__book-title">Shakespeare</h2>
                         <p class="bookshelf__book-author">Judi Dench</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/fiction/crime-thrillers-mysteries/the-last-devil-to-die-by-richard-osman.html">
                     <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/coming_soon/CS2_The_Last_Devil_To_Die.jpg" alt="The Last Devil To Die">
+                        <img class="bookshelf__book-cover"
+                            src="assets/book_images/coming_soon/CS2_The_Last_Devil_To_Die.jpg"
+                            alt="The Last Devil To Die">
                         <h2 class="bookshelf__book-title">The Last Devil To Die</h2>
                         <p class="bookshelf__book-author">Richard Osman</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/fiction/crime-thrillers-mysteries/the-year-of-the-locust-by-terry-hayes.html">
                     <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/coming_soon/CS3_The_Year_of_the_Locust.jpeg" alt="The Year of Locust">
+                        <img class="bookshelf__book-cover"
+                            src="assets/book_images/coming_soon/CS3_The_Year_of_the_Locust.jpeg"
+                            alt="The Year of Locust">
                         <h2 class="bookshelf__book-title">The Year of Locust</h2>
                         <p class="bookshelf__book-author">Terry Hayes</p>
                     </div>
@@ -249,33 +260,37 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                 <h1 class="bookshelf__title">New Arrivals</h1>
             </div>
             <div class="bookshelf__books">
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/fiction/classics/if-on-a-winters-night-a-traveller-by-italo-calvino.html">
                     <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/fiction/classics/New1_If_on_a_Winters_Night_a_Traveller.jpeg" alt="If on a Winter's Night a Traveller">
+                        <img class="bookshelf__book-cover"
+                            src="/assets/book_images/fiction/classics/New1_If_on_a_Winters_Night_a_Traveller.jpeg"
+                            alt="If on a Winter's Night a Traveller Cover">
                         <h2 class="bookshelf__book-title">If on a Winter's Night a Traveller</h2>
                         <p class="bookshelf__book-author">Italo Calvino</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/non-fiction/art/see-what-youre-missing-by-will-gompertz.html">
                     <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/non-fiction/art/New2_Tiny House-Live Small-Dream_Big.jpeg"
-                            alt="Tiny House: Live Small, Dream Big">
-                        <h2 class="bookshelf__book-title">Tiny House: Live Small, Dream Big</h2>
-                        <p class="bookshelf__book-author">Brent Heavener</p>
+                        <img class="bookshelf__book-cover"
+                            src="https://m.media-amazon.com/images/I/71xVTMQE2+L.jpg"
+                            alt="See What You're Missing Cover">
+                        <h2 class="bookshelf__book-title">See What You're Missing</h2>
+                        <p class="bookshelf__book-author">Will Gompertz</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/non-fiction/biography/everything-i-know-about-love-by-dolly-alderton.html">
                     <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/non-fiction/biography/New3_The_Secret_History_of_the_Mongols.jpeg"
-                            alt="The Secret History of the Mongols">
-                        <h2 class="bookshelf__book-title">The Secret History of the Mongols</h2>
-                        <p class="bookshelf__book-author">Christopher P. Atwood (Translator)</p>
+                        <img class="bookshelf__book-cover"
+                            src="https://m.media-amazon.com/images/I/81xVmngZ2mL.jpg"
+                            alt="Everything I Know About Love Cover">
+                        <h2 class="bookshelf__book-title">Everything I Know About Love</h2>
+                        <p class="bookshelf__book-author">Dolly Alderton</p>
                     </div>
                 </a>
             </div>
         </div>
 
-        <!--Featured-video-->
+        <!--Featured-video
         <section class="featured-video">
             <div class="featured-video__left-column">
                 <div class="featured-video__introduction">
@@ -298,8 +313,8 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                     </p>
 
                     <button class="featured-video__watch-btn">
-                        <a class="featured-video__watch-btn-link"
-                            href="https://www.youtube.com/watch?v=muc5dTN8_yE" target="_blank">Watch
+                        <a class="featured-video__watch-btn-link" href="https://www.youtube.com/watch?v=muc5dTN8_yE"
+                            target="_blank">Watch
                             now <span>>>></span></a>
                     </button>
                 </div>
@@ -311,7 +326,7 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                     allowfullscreen></iframe>
             </div>
         </section>
-
+    -->
         <!--Fiction-->
         <div class="bookshelf">
             <div class="bookshelf__title-container">
@@ -319,26 +334,28 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                 <a class="bookshelf__view-all-link" href="/books/fiction.html">View all >></a>
             </div>
             <div class="bookshelf__books">
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/fiction/action-and-adventure/two-storm-wood-by-philip-gray.html">
                     <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/fiction/action/B1_two_storm_wood.jpeg"
-                            alt="Two Storm Wood">
+                        <img class="bookshelf__book-cover"
+                            src="assets/book_images/fiction/action/B1_two_storm_wood.jpeg" alt="Two Storm Woo Cover">
                         <h2 class="bookshelf__book-title">Two Storm Wood</h2>
                         <p class="bookshelf__book-author">Philip Gray</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/fiction/classics/to-kill-a-mockingbird-by-harper-lee.html">
                     <div class="bookshelf__book">
                         <img class="bookshelf__book-cover"
-                            src="assets/book_images/fiction/classics/B5_to_kill_a_mockingbird.jpg" alt="To Kill A Mockingbird">
+                            src="assets/book_images/fiction/classics/B5_to_kill_a_mockingbird.jpg"
+                            alt="To Kill A Mockingbird Cover">
                         <h2 class="bookshelf__book-title">To Kill A Mockingbird</h2>
                         <p class="bookshelf__book-author">Harper Lee</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/fiction/crime-thrillers-mysteries/the-bullet-that-missed-by-richard-osman.html">
                     <div class="bookshelf__book">
-                        <img class="bookshelf__book-cover" src="assets/book_images/fiction/crime/B7_The_Bullet_That_Missed.jpeg"
-                            alt="The Bullet That Missed">
+                        <img class="bookshelf__book-cover"
+                            src="assets/book_images/fiction/crime/B7_The_Bullet_That_Missed.jpeg"
+                            alt="The Bullet That Missed Cover">
                         <h2 class="bookshelf__book-title">The Bullet That Missed</h2>
                         <p class="bookshelf__book-author">Richard Osman</p>
                     </div>
@@ -353,28 +370,28 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                 <a class="bookshelf__view-all-link" href="/books/non-fiction.html">View all >></a>
             </div>
             <div class="bookshelf__books">
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/non-fiction/business/the-making-of-a-manager-by-julie-zhuo.html">
                     <div class="bookshelf__book">
                         <img class="bookshelf__book-cover"
                             src="assets/book_images/non-fiction/business/The_Making_of_a_Manager.jpeg"
-                            alt="The Making of a Manager">
+                            alt="The Making of a Manager Cover">
                         <h2 class="bookshelf__book-title">The Making of a Manager</h2>
                         <p class="bookshelf__book-author">Julie Zhuo</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/non-fiction/business/the-shed-method-by-sara-milne-rowe.html">
                     <div class="bookshelf__book">
                         <img class="bookshelf__book-cover"
-                            src="assets/book_images/non-fiction/business/The_Shed_Method.jpeg" alt="The SHED Method">
+                            src="assets/book_images/non-fiction/business/The_Shed_Method.jpeg" alt="The SHED Method Cover">
                         <h2 class="bookshelf__book-title">The SHED Method</h2>
                         <p class="bookshelf__book-author">Sara Milne Rowe</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/non-fiction/business/who-moved-my-cheese-by-dr-spencer-johnson.html">
                     <div class="bookshelf__book">
                         <img class="bookshelf__book-cover"
                             src="assets/book_images/non-fiction/business/Who_Moved_My_Cheese.jpeg"
-                            alt="Who Moved My Cheese">
+                            alt="Who Moved My Cheese Cover">
                         <h2 class="bookshelf__book-title">Who Moved My Cheese</h2>
                         <p class="bookshelf__book-author">Spencer Johnson</p>
                     </div>
@@ -389,37 +406,37 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                 <a class="bookshelf__view-all-link" href="/books/children.html">View all >></a>
             </div>
             <div class="bookshelf__books">
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/children/0-18m/farm-animals-by-ladybird.html">
                     <div class="bookshelf__book">
                         <img class="bookshelf__book-cover"
-                            src="assets/book_images/children/0-18/Baby_Touch-Farm_Animals.jpeg"
-                            alt="Baby Touch: Farm Animals">
+                            src="/assets/book_images/children/0-18/Baby_Touch-Farm_Animals.jpeg"
+                            alt="Baby Touch: Farm Animals Cover">
                         <h2 class="bookshelf__book-title">Baby Touch: Farm Animals</h2>
                         <p class="bookshelf__book-author">Lady Bird</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/children/0-18m/i-love-my-world-by-ladybird.html">
                     <div class="bookshelf__book">
                         <img class="bookshelf__book-cover"
-                            src="assets/book_images/children/0-18/Baby_Touch-I_Love_My_World.jpeg"
-                            alt="Baby Touch: I Love My World">
+                            src="/assets/book_images/children/0-18/Baby_Touch-I_Love_My_World.jpeg"
+                            alt="Baby Touch: I Love My World Cover">
                         <h2 class="bookshelf__book-title">Baby Touch: I Love My World</h2>
                         <p class="bookshelf__book-author">Lady Bird</p>
                     </div>
                 </a>
-                <a class="bookshelf__book-link" href="#">
+                <a class="bookshelf__book-link" href="/books/children/0-18m/peekaboo-by-ladybird.html">
                     <div class="bookshelf__book">
                         <img class="bookshelf__book-cover"
-                            src="assets/book_images/children/0-18/Ten_Minutes_to_Bed-Wheres_Little_Koala.jpeg"
-                            alt="Ten Minutes to Bed: Where's Little Koala?">
-                        <h2 class="bookshelf__book-title">Ten Minutes to Bed: Where's Little Koala?</h2>
-                        <p class="bookshelf__book-author">Rhiannon Fielding</p>
+                            src="https://m.media-amazon.com/images/I/8108XrM353L.jpg"
+                            alt="Peekaboo Cover">
+                        <h2 class="bookshelf__book-title">Baby Touch: Peekaboo</h2>
+                        <p class="bookshelf__book-author">Ladybird</p>
                     </div>
                 </a>
             </div>
         </div>
 
-        <!--Newsletter-->
+        <!--Newsletter
         <section class="newsletter">
             <div class="newsletter__left-column">
                 <div class="newsletter__contact-info">
@@ -435,16 +452,19 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                         <input type="email" name="email" placeholder="Email" class="newsletter__input-email">
                         <input type="submit" name="submit" value="Sign Up" class="newsletter__input-submit">
                     </form>
-                    <p class="newsletter__consent">By signing up, I confirm that I'm over 16. To find out what personal data we collect and how we use it, please visit our <a class="newsletter__consent-link" href="/policies/privacy-policy.html">Privacy Policy</a></p>
+                    <p class="newsletter__consent">By signing up, I confirm that I'm over 16. To find out what personal
+                        data we collect and how we use it, please visit our <a class="newsletter__consent-link"
+                            href="/policies/privacy-policy.html">Privacy Policy</a></p>
                 </div>
             </div>
             <div class="newsletter__map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0716553790694!2d106.69319177528834!3d10.728956760067037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2sRMIT%20University%20Vietnam%20-%20Saigon%20South%20campus!5e0!3m2!1sen!2s!4v1688978630747!5m2!1sen!2s"
-                    width="840" height="560" style="border:0;" allowfullscreen loading="lazy"
+                    width="600" height="450" style="border:0;" allowfullscreen loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" class="newsletter__iframe"></iframe>
             </div>
         </section>
+    -->
     </main>
 
     <!--Webstie footer-->
@@ -453,11 +473,16 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
             <div class="footer__useful-links">
                 <h2 class="footer__useful-links--title">Useful links</h2>
                 <ul class="useful-links__list">
-                    <li class="useful-links__list-item"><a class="useful-links__item-link" href="/about/overview.html">About Us</a></li>
-                    <li class="useful-links__list-item"><a class="useful-links__item-link" href="/policies/privacy-policy.html">Privacy Policy</a></li>
-                    <li class="useful-links__list-item"><a class="useful-links__item-link" href="/policies/terms.html">Terms</a></li>
-                    <li class="useful-links__list-item"><a class="useful-links__item-link" href="/policies/copyright.html">Copyright</a></li>
-                    <li class="useful-links__list-item"><a class="useful-links__item-link" href="/contact.html">Contact Us</a></li>
+                    <li class="useful-links__list-item"><a class="useful-links__item-link"
+                            href="/about/overview.html">About Us</a></li>
+                    <li class="useful-links__list-item"><a class="useful-links__item-link"
+                            href="/policies/privacy-policy.html">Privacy Policy</a></li>
+                    <li class="useful-links__list-item"><a class="useful-links__item-link"
+                            href="/policies/terms.html">Terms</a></li>
+                    <li class="useful-links__list-item"><a class="useful-links__item-link"
+                            href="/policies/copyright.html">Copyright</a></li>
+                    <li class="useful-links__list-item"><a class="useful-links__item-link" href="/contact.html">Contact
+                            Us</a></li>
                 </ul>
             </div>
 
@@ -465,22 +490,24 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                 <h2 class="footer__books--title">Books</h2>
                 <ul class="books__list">
                     <li class="books__list-item"><a class="books__item-link" href="/books/fiction.html">Fiction</a></li>
-                    <li class="books__list-item"><a class="books__item-link" href="/books/non-fiction.html">Non-fiction</a></li>
-                    <li class="books__list-item"><a class="books__item-link" href="/books/children.html">Children</a></li>
+                    <li class="books__list-item"><a class="books__item-link"
+                            href="/books/non-fiction.html">Non-fiction</a></li>
+                    <li class="books__list-item"><a class="books__item-link" href="/books/children.html">Children</a>
+                    </li>
                 </ul>
             </div>
 
             <div class="footer__social">
                 <h2 class="footer__social--title">Stay connected</h2>
                 <ul class="social__list">
-                    <li class="social__list-item"><a class="social__item-link" href="https://www.facebook.com/pnm0905"><i
-                                class="fa-brands fa-facebook"></i></a></li>
-                    <li class="social__list-item"><a class="social__item-link" href="https://www.instagram.com/minhpnh/"><i
-                                class="fa-brands fa-instagram"></i></a></li>
-                    <li class="social__list-item"><a class="social__item-link" href="https://www.linkedin.com/in/minhpnh/"><i
-                                class="fa-brands fa-linkedin"></i></a></li>
-                    <li class="social__list-item"><a class="social__item-link" href="https://github.com/minhphan-rmit"><i
-                                class="fa-brands fa-github"></i></a></li>
+                    <li class="social__list-item"><a class="social__item-link"
+                            href="https://www.facebook.com/pnm0905"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="social__list-item"><a class="social__item-link"
+                            href="https://www.instagram.com/minhpnh/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="social__list-item"><a class="social__item-link"
+                            href="https://www.linkedin.com/in/minhpnh/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="social__list-item"><a class="social__item-link"
+                            href="https://github.com/minhphan-rmit"><i class="fa-brands fa-github"></i></a></li>
                 </ul>
             </div>
         </div>
