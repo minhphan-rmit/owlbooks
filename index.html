@@ -41,7 +41,10 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
         <nav class="header__nav">
             <!--Logo section-->
             <div class="header__logo">
-                <a href="/index.html" class="header__logo-link"><img src="/assets/logo/toqb_logo.png" class="header__logo-img" alt="Owl Books"></a>
+                <a href="/index.html" class="header__logo-link">
+                    <img src="/assets/logo/toqb_logo.png" class="header__logo-img" alt="Owl Books">
+                    <span class="header__logo-text">Owl Books</span>
+                </a>
             </div>
 
             <!--Responsive menu buttons-->
@@ -289,44 +292,31 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
                 </a>
             </div>
         </div>
+        
+        <div class="featured-video">
+            <div class="featured-video__description">
+                <h2 class="featured-video__section-title">Watch now</h2>
+                <h1 class="featured-video__video-title">Get the Most Out of Your Books - Be an Active Reader</h1>
+                <p class="featured-video__video-author">The Art of Improvement</p>
+                <p class="featured-video__video-description">
+                    Unlock the full potential of your reading experience with our featured video, 'Get the Most Out
+                    of
+                    Your Books - Be an Active Reader.' Presented by The Art of Improvement, this insightful guide
+                    offers
+                    valuable tips and techniques to transform passive reading into an engaging and active pursuit.
+                    Whether you're a seasoned bibliophile or new to the world of books, this video provides
+                    practical
+                    advice to enrich your reading journey. Click to watch and discover how to turn every page into a
+                    more meaningful connection with the text.
+                </p>
 
-        <!--Featured-video
-        <section class="featured-video">
-            <div class="featured-video__left-column">
-                <div class="featured-video__introduction">
-                    <h2 class="featured-video__section-title">Watch now</h2>
-                    <h1 class="featured-video__video-title">Get the Most Out of Your Books - Be an Active Reader</h1>
-                    <p class="featured-video__video-author">The Art of Improvement</p>
-                </div>
-
-                <div class="featured-video__description">
-                    <p class="featured-video__video-description">
-                        Unlock the full potential of your reading experience with our featured video, 'Get the Most Out
-                        of
-                        Your Books - Be an Active Reader.' Presented by The Art of Improvement, this insightful guide
-                        offers
-                        valuable tips and techniques to transform passive reading into an engaging and active pursuit.
-                        Whether you're a seasoned bibliophile or new to the world of books, this video provides
-                        practical
-                        advice to enrich your reading journey. Click to watch and discover how to turn every page into a
-                        more meaningful connection with the text.
-                    </p>
-
-                    <button class="featured-video__watch-btn">
-                        <a class="featured-video__watch-btn-link" href="https://www.youtube.com/watch?v=muc5dTN8_yE"
-                            target="_blank">Watch
-                            now <span>>>></span></a>
-                    </button>
-                </div>
+                <a class="featured-video__watch-btn" href="https://www.youtube.com/watch?v=muc5dTN8_yE" target="_blank">Watch on Youtube</a>
             </div>
             <div class="featured-video__video">
-                <iframe width="840" height="560" src="https://www.youtube.com/embed/muc5dTN8_yE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                <video class="featured-video__source" controls src="/assets/video/get_the_most_out_of_your_book_be_an_active_reader.mp4"></video>
             </div>
-        </section>
-    -->
+        </div>
+
         <!--Fiction-->
         <div class="bookshelf">
             <div class="bookshelf__title-container">
@@ -436,35 +426,22 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
             </div>
         </div>
 
-        <!--Newsletter
-        <section class="newsletter">
-            <div class="newsletter__left-column">
-                <div class="newsletter__contact-info">
-                    <h1 class="newsletter__contact-title">Contact us</h1>
-                    <p class="newsletter__contact-text"><i class="fa-solid fa-location-dot"></i>702 Nguyen Van Linh
-                        Boulevard District 7, Ho Chi Minh City, Vietnam</p>
-                    <p class="newsletter__contact-text"><i class="fa-solid fa-phone"></i>(+84) 907 459 988</p>
-                    <p class="newsletter__contact-text"><i class="fa-solid fa-envelope"></i>s3978598@rmit.edu.vn</p>
-                </div>
-                <div class="newsletter__sign-up">
-                    <h1 class="newsletter__sign-up-title">Sign up to Owl Books newsletter</h1>
-                    <form action="" method="POST" class="newsletter__form">
-                        <input type="email" name="email" placeholder="Email" class="newsletter__input-email">
-                        <input type="submit" name="submit" value="Sign Up" class="newsletter__input-submit">
-                    </form>
-                    <p class="newsletter__consent">By signing up, I confirm that I'm over 16. To find out what personal
-                        data we collect and how we use it, please visit our <a class="newsletter__consent-link"
-                            href="/policies/privacy-policy.html">Privacy Policy</a></p>
-                </div>
+        <!--Newsletter-->
+        <div class="newsletter">
+            <div class="newsletter__container">
+                <h2 class="newsletter__title">Subscribe to our newsletter</h2>
+                <p class="newsletter__description">Sign up to receive updates on new arrivals, special offers and
+                    other
+                    discount information.</p>
+                <form class="newsletter__form" action="/action_page.php">
+                    <input class="newsletter__input" type="email" placeholder="Enter your email address" name="email"
+                        required>
+                    <button class="newsletter__submit-btn" type="submit">Subscribe</button>
+                </form>
+                <p class="newsletter__consent">By signing up, I confirm that I'm over 16. To find out what personal data we collect and how we use it, please visit our <a class="newsletter__consent-link" href="/policies/privacy-policy.html">Privacy Policy</a></p>
             </div>
-            <div class="newsletter__map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0716553790694!2d106.69319177528834!3d10.728956760067037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2sRMIT%20University%20Vietnam%20-%20Saigon%20South%20campus!5e0!3m2!1sen!2s!4v1688978630747!5m2!1sen!2s"
-                    width="600" height="450" style="border:0;" allowfullscreen loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="newsletter__iframe"></iframe>
-            </div>
-        </section>
-    -->
+        </div>
+    </section>
     </main>
 
     <!--Webstie footer-->
