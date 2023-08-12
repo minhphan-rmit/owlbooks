@@ -4,7 +4,7 @@
 **Owl Books** is a premier online bookstore showcasing a diverse range of books from various genres and sources. Drawing inspiration from the owl, a symbol of wisdom and knowledge in many cultures, our goal is to empower readers on their journey of discovery, learning, and personal growth.
 
 <p align="center">
-  <img src="./assets/logo/toqb_logo.png" alt="Owl Books Logo" width="200" height="200"/>
+  <img src="./assets/logo/toqb_logo.png" alt="Owl Books Logo" width="auto" height="200"/>
 </p>
 
 
