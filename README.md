@@ -3,8 +3,7 @@
 ## Overview
 **Owl Books** is a premier online bookstore showcasing a diverse range of books from various genres and sources. Drawing inspiration from the owl, a symbol of wisdom and knowledge in many cultures, our goal is to empower readers on their journey of discovery, learning, and personal growth.
 
-![Owl Books Logo](https://github.com/minhphan-rmit/owlbooks/assets/logo/toqb_logo.png)
-*(Replace with the actual path to the Owl Books logo image)*
+![Owl Books Logo](./owlbooks/assets/logo/toqb_logo.png)
 
 ## Purpose
 This repository hosts the static prototype of the Owl Books website, intended for review and feedback from senior developers. It provides insights into the website's structure, design aesthetics, and the technical specifics of its HTML and CSS.
