@@ -5,7 +5,7 @@ Semester: 2023B
 Assessment: Assignment 1
 Author: Phan Nhat Minh
 ID: s3978598
-Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.uk, Coding Nepal, Codepen.io, freepik.com, unsplash.com, giphy.com, fontawesome.com, google.com, GitHub Copilot.
+Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.uk, Coding Nepal, Codepen.io, freepik.com, unsplash.com, giphy.com, fontawesome.com, google.com, font.google.com, youtube.com
 */
 
 /*Font import*/
@@ -19,11 +19,6 @@ Acknowledgement: chat.openai.com, w3schools.com, stackoverflow.com, penguin.co.u
     --owl--teal-primary: #00425A;
     --owl--grey-primary: #f2f4f6;
     --owl--yellow-primary: #ff8e05;
-
-    /*Screen sizes*/
-    --owl--screen-sm: 768px;
-    --owl--screen-md: 992px;
-
 }
 
 /*Global*/
