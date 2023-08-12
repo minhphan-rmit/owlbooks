@@ -1,58 +1,103 @@
-# Owl Books
+# Owl Books Website
 
-This repository contains the project files for the Assessment 1 of the COSC2430 - Web Programming course at RMIT University Vietnam. The task was to develop a static website for a fictional bookstore, "Owl Books".
+## Overview
+**Owl Books** is a premier online bookstore showcasing a diverse range of books from various genres and sources. Drawing inspiration from the owl, a symbol of wisdom and knowledge in many cultures, our goal is to empower readers on their journey of discovery, learning, and personal growth.
 
-## About The Project
+![Owl Books Logo](https://github.com/minhphan-rmit/owlbooks/assets/logo/toqb_logo.png)
+*(Replace with the actual path to the Owl Books logo image)*
 
-The main objective of this project was to build a static website using HTML and CSS. The website showcases different books and authors, providing a simple yet user-friendly interface for users to navigate through the books and their detailed information.
+## Purpose
+This repository hosts the static prototype of the Owl Books website, intended for review and feedback from senior developers. It provides insights into the website's structure, design aesthetics, and the technical specifics of its HTML and CSS.
 
-## Features
+## Scope
+The project encapsulates:
+1. A clear representation of the website's structure through HTML.
+2. Aesthetic designs indicating the strategic application of CSS.
+3. Ensured responsiveness across various devices.
 
-The website includes the following features:
-1. **Home Page:** A welcoming page that introduces the Domino Bookstore.
-2. **Book Listing:** Showcases the variety of books available in the bookstore.
-3. **Book Details:** Individual pages for each book, detailing its title, author, price, genre, and a brief description.
+## Project Description
+Based on the provided sketches, we've developed several core features:
+
+- **Homepage:** The initial landing page.
+- **Book Listings:** A catalogue of available books.
+- **Detailed Book Views:** Individual pages for each book.
+- **Contact Page:** A dedicated section for users to reach out.
+
+Additional features:
+- Pre-order form for upcoming releases.
+- Recommendations for related books.
+- Spotlighted videos related to book themes or authors.
+- A newsletter sign-up to keep users updated.
+
+### HTML
+The backbone of this static website project. Semantic tags, classes, and IDs have been meticulously employed to lay a solid foundation for future iterations.
+
+### CSS
+The website uses a single CSS file to maintain consistency and ease of management. This choice also ensures efficient use of HTML classes and IDs.
+
+### Vanilla JavaScript
+> **Note:** JavaScript hasn't been implemented in this phase. However, we recognize its potential for enhancing user experience in subsequent updates.
 
 ## Getting Started
 
-To get a local copy of the website up and running, follow these simple steps.
-
-### Prerequisites
-
-Ensure you have the following software installed on your local machine:
-
-* A web browser (like Google Chrome, Firefox)
-* A text editor (like Sublime Text, Atom, Visual Studio Code)
-
-### Installation
-
-1. Clone the repo
+1. Clone the repository: 
 ```sh
-git clone https://github.com/your_username_/domino.bookstore.git
+git clone https://github.com/minhphan-rmit/owlbooks.git
 ```
 
-2. Open the 'index.html' file in your preferred web browser.
+2. Navigate to the project directory: 
+```sh
+cd path/to/directory
+```
 
-## Usage
+3. Open `index.html` in your preferred web browser.
 
-This project can be used as a template for any bookshop website, or as a reference project for learning basic web development skills in HTML, CSS, and JavaScript.
+## Feedback & Contributions
+Senior developers and fellow contributors, your feedback is invaluable! If you have suggestions or find issues, please raise them in the **Issues** section of this repository.
 
-## Contributing
+For contributions:
+1. Fork this repository.
+2. Create a new branch: 
+```sh
+git checkout -b <branch-name>
+```
 
-Any contributions you make are **greatly appreciated**.
-
-## Contact
 
 Please reach out to me if you have any questions or feedback.
 
 * Minh Phan - s3978598@rmit.edu.vn
-* Project Link: [https://github.com/minhphan-rmit/domino.bookstore](https://github.com/minhphan-rmit/domino.bookstore)
+* Project Link: [https://github.com/minhphan-rmit/owlbooks](https://github.com/minhphan-rmit/owlbooks)
 
-## Acknowledgments
+## Acknowledgements
 
-A big thank you to Mr. Tom Huynh of COSC2430 - Web Programming at RMIT University Vietnam for providing the guidance and resources to complete this project.
+We'd like to express our heartfelt gratitude to **Mr. Tom Huynh** from the `COSC2430 - Web Programming` course at **RMIT University Vietnam**. His mentorship and the resources he provided were pivotal in bringing this project to fruition.
 
-## License and Disclaimer
+### References
 
-This project is licensed under the MIT License - see the [`LICENSE.md`](./LICENSE.md) file for details.
+- [OpenAI Chat](https://chat.openai.com)
+- [W3Schools](https://www.w3schools.com)
+- [Stack Overflow](https://www.stackoverflow.com)
+- [Penguin Books](https://www.penguin.co.uk)
+- Coding Nepal
+- [Codepen](https://www.codepen.io)
+- [Freepik](https://www.freepik.com)
+- [Unsplash](https://www.unsplash.com)
+- [Giphy](https://www.giphy.com)
+- [FontAwesome](https://www.fontawesome.com)
+- [Google](https://www.google.com)
+- [Google Fonts](https://fonts.google.com)
+- [YouTube](https://www.youtube.com)
+
+### Image Credits
+
+Images have been sourced from:
+- [Freepik](https://www.freepik.com)
+- [Amazon](https://www.amazon.com)
+- [Penguin Books](https://www.penguin.co.uk)
+- [eBay](https://www.ebay.com)
+
+### Disclaimer
+
+We do not claim ownership over any of the images used in this project. All assets and resources have been utilized strictly for educational purposes.
+
 
